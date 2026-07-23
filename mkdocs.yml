@@ -1,0 +1,100 @@
+site_name: Product Manager Mastery Path
+site_description: A structured, module-wise product management training program from entry level to master level, with real frameworks and templates in every module.
+site_url: https://sigilipelli.github.io/product-manager-mastery-path/
+repo_url: https://github.com/SIGILIPELLI/product-manager-mastery-path
+repo_name: product-manager-mastery-path
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · What Is Product Management?": level-1/01-what-is-product-management.md
+      - "02 · Understanding Customers & Users": level-1/02-understanding-customers-users.md
+      - "03 · Problem Discovery": level-1/03-problem-discovery.md
+      - "04 · Prioritization Basics": level-1/04-prioritization-basics.md
+      - "05 · Writing Requirements": level-1/05-writing-requirements.md
+      - "06 · Working with Design & Engineering": level-1/06-working-with-design-engineering.md
+      - "07 · Metrics & KPIs Basics": level-1/07-metrics-kpis-basics.md
+      - "08 · Roadmapping Basics": level-1/08-roadmapping-basics.md
+      - "09 · Stakeholder Communication Basics": level-1/09-stakeholder-communication-basics.md
+      - "10 · Project — Write a Complete PRD": level-1/10-project-complete-prd.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Advanced Discovery": level-2/01-advanced-discovery.md
+      - "02 · Prioritization Frameworks Deep Dive": level-2/02-prioritization-frameworks-deep-dive.md
+      - "03 · A/B Testing & Experimentation Basics": level-2/03-ab-testing-experimentation-basics.md
+      - "04 · Product Analytics": level-2/04-product-analytics.md
+      - "05 · Go-to-Market Basics": level-2/05-go-to-market-basics.md
+      - "06 · Working with Data Teams": level-2/06-working-with-data-teams.md
+      - "07 · Agile/Scrum for PMs": level-2/07-agile-scrum-for-pms.md
+      - "08 · Competitive Analysis": level-2/08-competitive-analysis.md
+      - "09 · Pricing Basics": level-2/09-pricing-basics.md
+      - "10 · Project — GTM Plan for a Feature Launch": level-2/10-project-gtm-plan.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · Product Strategy & Vision": level-3/01-product-strategy-vision.md
+      - "02 · OKRs for Product Teams": level-3/02-okrs-for-product-teams.md
+      - "03 · Platform & Ecosystem Thinking": level-3/03-platform-ecosystem-thinking.md
+      - "04 · Growth Product Management": level-3/04-growth-product-management.md
+      - "05 · B2B vs B2C PM Differences": level-3/05-b2b-vs-b2c-pm-differences.md
+      - "06 · Working with Sales & Customer Success": level-3/06-working-with-sales-customer-success.md
+      - "07 · Product Ops Basics": level-3/07-product-ops-basics.md
+      - "08 · Advanced Experimentation": level-3/08-advanced-experimentation.md
+      - "09 · Managing Technical Debt & Platform Investments": level-3/09-managing-technical-debt-platform-investments.md
+      - "10 · Project — Product Strategy Doc + OKRs": level-3/10-project-strategy-okrs.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Leading Product Orgs": level-4/01-leading-product-orgs.md
+      - "02 · Portfolio & Multi-Product Strategy": level-4/02-portfolio-multi-product-strategy.md
+      - "03 · Product-Led Growth at Scale": level-4/03-product-led-growth-at-scale.md
+      - "04 · M&A and Product Integration": level-4/04-ma-and-product-integration.md
+      - "05 · Executive Communication & Board Reporting": level-4/05-executive-communication-board-reporting.md
+      - "06 · Building Product Culture": level-4/06-building-product-culture.md
+      - "07 · AI/ML Product Management": level-4/07-ai-ml-product-management.md
+      - "08 · Crisis Management for Products": level-4/08-crisis-management-for-products.md
+      - "09 · Career Growth: IC to Director/VP": level-4/09-career-growth-ic-to-director-vp.md
+      - "10 · Capstone — Full Product Strategy + Org Design": level-4/10-capstone-strategy-org-design.md
