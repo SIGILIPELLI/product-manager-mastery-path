@@ -1,3 +1,8 @@
+---
+title: "Product Management Course Free: Beginner to Master"
+description: "Free product management course from beginner to advanced -- real frameworks, templates, and a full PRD project. Part of a 37-course free learning library."
+---
+
 # Product Manager Mastery Path
 
 A structured, module-wise product management training program that takes you
