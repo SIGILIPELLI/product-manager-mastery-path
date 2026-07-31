@@ -20,9 +20,9 @@ through the same frameworks working PMs use every day.
 | Level | Focus | Modules |
 |-------|-------|---------|
 | [Level 1 · Entry](level-1/index.md) | Core PM fundamentals: discovery, prioritization, requirements, metrics, roadmaps | 9 topics + 1 project |
-| [Level 2 · Intermediate](level-2/index.md) | Experimentation, analytics, go-to-market, pricing, working cross-functionally | 9 topics + 1 project |
-| [Level 3 · Advanced](level-3/index.md) | Strategy, OKRs, platform thinking, growth, B2B/B2C differences | 9 topics + 1 project |
-| [Level 4 · Master](level-4/index.md) | Leading product orgs, portfolio strategy, PLG at scale, executive communication | 9 topics + 1 capstone |
+| Level 2 · Intermediate (coming soon) | Experimentation, analytics, go-to-market, pricing, working cross-functionally | 9 topics + 1 project |
+| Level 3 · Advanced (coming soon) | Strategy, OKRs, platform thinking, growth, B2B/B2C differences | 9 topics + 1 project |
+| Level 4 · Master (coming soon) | Leading product orgs, portfolio strategy, PLG at scale, executive communication | 9 topics + 1 capstone |
 
 ## How to use this site
 
