@@ -62,8 +62,19 @@ nav:
       - "08 · Roadmapping Basics": level-1/08-roadmapping-basics.md
       - "09 · Stakeholder Communication Basics": level-1/09-stakeholder-communication-basics.md
       - "10 · Project — Write a Complete PRD": level-1/10-project-complete-prd.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Advanced Discovery": level-2/01-advanced-discovery.md
+      - "02 · Prioritization Frameworks Deep Dive": level-2/02-prioritization-frameworks-deep-dive.md
+      - "03 · A/B Testing & Experimentation Basics": level-2/03-ab-testing-experimentation-basics.md
+      - "04 · Product Analytics": level-2/04-product-analytics.md
+      - "05 · Go-to-Market Basics": level-2/05-go-to-market-basics.md
+      - "06 · Working with Data Teams": level-2/06-working-with-data-teams.md
+      - "07 · Agile/Scrum for PMs": level-2/07-agile-scrum-for-pms.md
+      - "08 · Competitive Analysis": level-2/08-competitive-analysis.md
+      - "09 · Pricing Basics": level-2/09-pricing-basics.md
+      - "10 · Project — GTM Plan for a Feature Launch": level-2/10-project-gtm-plan.md
 # --- auto-pruned stub levels (see AdSense low-value-content fix) ---
 exclude_docs: |
-  level-2/*.md
   level-3/*.md
   level-4/*.md
