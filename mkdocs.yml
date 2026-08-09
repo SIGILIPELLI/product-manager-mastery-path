@@ -74,7 +74,27 @@ nav:
       - "08 · Competitive Analysis": level-2/08-competitive-analysis.md
       - "09 · Pricing Basics": level-2/09-pricing-basics.md
       - "10 · Project — GTM Plan for a Feature Launch": level-2/10-project-gtm-plan.md
-# --- auto-pruned stub levels (see AdSense low-value-content fix) ---
-exclude_docs: |
-  level-3/*.md
-  level-4/*.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · Product Strategy & Vision": level-3/01-product-strategy-vision.md
+      - "02 · OKRs for Product Teams": level-3/02-okrs-for-product-teams.md
+      - "03 · Platform & Ecosystem Thinking": level-3/03-platform-ecosystem-thinking.md
+      - "04 · Growth Product Management": level-3/04-growth-product-management.md
+      - "05 · B2B vs B2C PM Differences": level-3/05-b2b-vs-b2c-pm-differences.md
+      - "06 · Working with Sales & Customer Success": level-3/06-working-with-sales-customer-success.md
+      - "07 · Product Ops Basics": level-3/07-product-ops-basics.md
+      - "08 · Advanced Experimentation": level-3/08-advanced-experimentation.md
+      - "09 · Managing Technical Debt & Platform Investments": level-3/09-managing-technical-debt-platform-investments.md
+      - "10 · Project — Product Strategy Doc + OKRs": level-3/10-project-strategy-okrs.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Leading Product Orgs": level-4/01-leading-product-orgs.md
+      - "02 · Portfolio & Multi-Product Strategy": level-4/02-portfolio-multi-product-strategy.md
+      - "03 · Product-Led Growth at Scale": level-4/03-product-led-growth-at-scale.md
+      - "04 · M&A and Product Integration": level-4/04-ma-and-product-integration.md
+      - "05 · Executive Communication & Board Reporting": level-4/05-executive-communication-board-reporting.md
+      - "06 · Building Product Culture": level-4/06-building-product-culture.md
+      - "07 · AI/ML Product Management": level-4/07-ai-ml-product-management.md
+      - "08 · Crisis Management for Products": level-4/08-crisis-management-for-products.md
+      - "09 · Career Growth: IC to Director/VP": level-4/09-career-growth-ic-to-director-vp.md
+      - "10 · Capstone — Full Product Strategy + Org Design": level-4/10-capstone-strategy-org-design.md
