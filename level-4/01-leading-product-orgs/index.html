@@ -1923,6 +1923,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works-the-coordination-math-behind-org-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: the coordination math behind org design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2298,6 +2309,17 @@
     <span class="md-ellipsis">
       
         Measuring the health of a product org
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-actually-works-the-coordination-math-behind-org-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: the coordination math behind org design
       
     </span>
   </a>
@@ -2862,6 +2884,60 @@ present a result that disappointed you.</p>
 <p>The last row is measured by actually asking, in skip-levels, and writing
 down what people say. The variance in those answers is the most accurate
 measure of your communication that exists.</p>
+<h2 id="how-it-actually-works-the-coordination-math-behind-org-design">How It Actually Works: the coordination math behind org design<a class="headerlink" href="#how-it-actually-works-the-coordination-math-behind-org-design" title="Permanent link">&para;</a></h2>
+<p>Every intuition above ("re-orgs help," "flat orgs get chaotic," "8 squads was
+too many") is actually a claim about a specific piece of combinatorics:
+<strong>communication overhead grows quadratically with team count, not linearly.</strong></p>
+<p>For <em>n</em> peer teams (or people) that must coordinate pairwise, the number of
+potential relationships is:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pairs = n(n-1) / 2
+</code></pre></div>
+<p>At ListUp's 8 opportunistic squads: <code>8 × 7 / 2 = 28</code> potential pairwise
+relationships. Split into groups of 3, 3, 2: intra-group pairs are
+<code>3+3+1 = 7</code>, and cross-group pairs (which must now go through a Director,
+not you) are the product of group sizes summed pairwise — <code>3×3 + 3×2 + 3×2 =
+21</code>, for 28 total, but only 21 (down from 28) ever reach a boundary that
+requires cross-group negotiation, and <em>none</em> of the 7 intra-group ones reach
+you at all. This is why the measured cross-group dependency count fell from
+34 to 12 two quarters later — you didn't reduce how much the product needed
+to coordinate, you moved most of the coordination inside a boundary a
+Director can resolve without you, and shrank the surface area exposed
+between groups.</p>
+<p>This is the same mechanics as <strong>Brooks's Law</strong> ("adding people to a late
+project makes it later"): a new person doesn't just add their own output,
+they add <code>n-1</code> new communication links that have to be maintained by
+everyone already there. A VP doing "9 hours a week of arbitration" wasn't
+short on time-management skill — 9 hours divided across a graph with 28
+edges is 19 minutes per edge per week, which is roughly enough time to
+receive an update and not enough to actually resolve a hard trade-off. Cut
+the exposed edges to 21, and even without changing the VP's calendar, each
+edge gets 26 minutes; group them 4/4 instead of 3/3/2 and you get fewer,
+denser edges again. <strong>The org chart is a graph-partitioning problem</strong>: you
+are choosing the cut that minimizes edges crossing the cut, subject to the
+constraint that each partition still contains a full path from decision to
+shipped customer value (the "ship without another team's sprint" test).</p>
+<p><strong>Span of control compounds the same way vertically.</strong> If a VP has <em>d</em>
+direct reports and each of those has <em>d</em> reports, decision latency for
+anything that must climb to the VP and back down is proportional to
+<code>2 log_d(N)</code> hops for an org of size <em>N</em> — which is why the ratio work
+(6–8 engineers/PM, 4–7 reports/manager) isn't arbitrary HR guidance: too
+wide a span (say 15 direct reports) means each 1:1 gets diluted below the
+threshold needed to actually coach rather than just status-check (Dunbar's
+proposed working-relationship ceiling is commonly cited around 15
+meaningful relationships a person can actively track); too narrow (2 direct
+reports) adds hops and cost with no coordination benefit. The 4–7 anchor is
+the range where a manager can hold real context on every report without the
+tree growing so tall that decisions take multiple round trips.</p>
+<p><strong>Decision-rights frameworks (RAPID, DACI) are a fix for a specific failure
+mode this math predicts</strong>: when <em>n</em> is large and no single node is marked
+as the decider, every edge in the graph becomes a candidate veto point, and
+the expected time to decide something scales with the number of people who
+<em>could</em> object, not the number who actually would. Naming one Recommender
+and one Decider per decision collapses an O(n) consensus process into O(1)
+— everyone else's input is solicited once, not negotiated indefinitely.
+That is the concrete mechanism behind "publish the new decision rights, not
+just the boxes": the boxes describe the graph's partition, the decision
+rights describe which edges carry a veto and which just carry information.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Count your decisions.</strong> For two weeks, log every decision that required

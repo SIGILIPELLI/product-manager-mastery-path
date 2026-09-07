@@ -2046,6 +2046,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works-the-compounding-arithmetic-behind-every-board-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: the compounding arithmetic behind every board number
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2320,6 +2331,17 @@
     <span class="md-ellipsis">
       
         Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-actually-works-the-compounding-arithmetic-behind-every-board-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: the compounding arithmetic behind every board number
       
     </span>
   </a>
@@ -2829,6 +2851,48 @@ credibility than three quarters of good results restore.</p>
 </tr>
 </tbody>
 </table>
+<h2 id="how-it-actually-works-the-compounding-arithmetic-behind-every-board-number">How It Actually Works: the compounding arithmetic behind every board number<a class="headerlink" href="#how-it-actually-works-the-compounding-arithmetic-behind-every-board-number" title="Permanent link">&para;</a></h2>
+<p><strong>Annualized NRR is a compounding, not an averaging, calculation.</strong> The
+bridge shows a <em>quarterly</em> retention factor of <code>retained ÷ starting =
+$50,510,000 / $49,100,000 = 1.02871</code>. Annualizing compounds that factor
+four times rather than multiplying the quarterly percentage by four:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>annualized NRR = (retained/starting)^4 = 1.02871^4 ≈ 1.1198 → 112.0%
+</code></pre></div>
+<p>Multiplying instead of compounding would give <code>1 + 4×0.02871 = 1.1148</code>, or
+111.5% — close enough here to hide the error, but the gap widens sharply at
+higher quarterly retention rates (a 5%-per-quarter business is 21.6%
+compounded annually versus 20% simple-multiplied), which is exactly the
+kind of silent arithmetic error a board member's own model will catch if
+your reported number doesn't reconcile with the bridge you showed on the
+previous slide. This is why the module insists on computing NRR <em>from</em> the
+bridge rather than from a dashboard: a dashboard may be doing either
+calculation, and only reconciling both against the raw bridge numbers each
+quarter proves which one it is.</p>
+<p><strong>The magic number and burn multiple are both marginal-efficiency ratios,
+and their denominators explain why "too good" numbers need a structural
+explanation.</strong> Magic number is <code>4 × ΔARR_quarterly / S&amp;M_prior_quarter</code> —
+it measures ARR generated per dollar of prior-quarter sales spend. When 71%
+of new ARR closes with no human involved (Level 4, Module 3's PLG
+mechanism), S&amp;M spend only buys the remaining 29%, so the same
+$3.3M of net-new ARR is being divided by an S&amp;M base that is
+structurally smaller than a sales-led peer's — the ratio isn't measuring
+better sales efficiency, it's measuring a different mix of who paid for
+the growth. A board member who has only seen the sales-led version of this
+ratio will assume the number is either fabricated or unsustainable unless
+the mix effect is named explicitly, in advance, in the same breath as the
+number itself.</p>
+<p><strong>Why the falsifier ("what would make me wrong") is the single highest-
+leverage sentence in the ask.</strong> A prediction with no stated failure
+condition cannot be checked, and a board learns whom to trust from a
+resolved track record, not from confidence at the time of the ask. Naming
+<code>acceptance rate stalls below 82%</code> in advance converts "Decide's marginal
+ROI is $620,000" from an unfalsifiable assertion into a testable claim with
+a public deadline (the Q1 review) — the same discipline used for kill
+criteria in the portfolio module, applied to a single hiring ask instead of
+an entire product line. Mechanically, it works because it pre-commits you
+to updating in public regardless of which way the result breaks, which is
+the only thing that distinguishes calibrated judgment from a series of
+lucky or unlucky guesses viewed after the fact.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Rewrite your last executive update as a four-part spine</strong>: bottom line,

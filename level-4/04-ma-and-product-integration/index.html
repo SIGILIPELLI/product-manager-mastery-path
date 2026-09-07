@@ -1996,6 +1996,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works-expected-value-under-uncertainty-and-why-attribution-is-the-load-bearing-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: expected value under uncertainty, and why attribution is the load-bearing variable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2276,6 +2287,17 @@
     <span class="md-ellipsis">
       
         How these deals fail
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-actually-works-expected-value-under-uncertainty-and-why-attribution-is-the-load-bearing-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: expected value under uncertainty, and why attribution is the load-bearing variable
       
     </span>
   </a>
@@ -2754,6 +2776,48 @@ than any integration plan.</p>
 </tr>
 </tbody>
 </table>
+<h2 id="how-it-actually-works-expected-value-under-uncertainty-and-why-attribution-is-the-load-bearing-variable">How It Actually Works: expected value under uncertainty, and why attribution is the load-bearing variable<a class="headerlink" href="#how-it-actually-works-expected-value-under-uncertainty-and-why-attribution-is-the-load-bearing-variable" title="Permanent link">&para;</a></h2>
+<p><strong>Expected value is a probability-weighted sum, and it is only as honest as
+its inputs.</strong> The mechanical formula behind the board table is:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>EV = Σ p_i × net_value_i,  where net_value_i = (ΔARR_i × multiple) − price − integration_cost
+</code></pre></div>
+<p>The naive model effectively set the attribution term to a hidden 100% (all
+of Decide's projected lift assigned to the acquisition) and used a single
+point estimate instead of a distribution — which is mathematically
+equivalent to running the weighted-sum formula with one scenario at
+<code>p = 1</code>. Collapsing a distribution to its most optimistic point is the
+single most common error in deal math, because the sum of several
+plausible-sounding assumptions (higher growth rate, full attribution, no
+integration friction) compounds multiplicatively into a headline number
+far outside any single scenario's plausible range — $132.7M from stacking
+three optimistic assumptions, versus $48.8M once each is separately
+probability-weighted and a failure case is included.</p>
+<p><strong>Why attribution has to be a variable, not a constant.</strong> Decide was
+already compounding at 71% before the acquisition; some of next year's
+growth would happen with or without Pricewell. Treating 100% of the
+acceleration as caused by the deal is the acquisition-math version of
+correlation-causation confusion — it's the same fallacy flagged in the
+portfolio module's NRR-attach analysis (accounts that buy more may just be
+better accounts) applied to a growth curve instead of a customer segment.
+Making attribution an explicit percentage per scenario (0%, 15%, 40%, 70%)
+forces the question "how much of this improvement would have happened
+anyway" to be answered before the number is presented, rather than
+smuggled in as an assumption nobody defends aloud.</p>
+<p><strong>Why a 15%-probability loss is still the right bet: EV vs. variance.</strong>
+The failure scenario loses $13.9M; the weighted EV is still +$48.8M
+positive, because the deal is being evaluated on a <strong>risk-neutral expected
+value</strong>, not on "can we tolerate the worst case regardless of odds." This
+is the standard decision-theory move of maximizing <code>Σ p_i × outcome_i</code>
+rather than optimizing for the worst-case outcome (minimax) — it is only
+valid if (a) the failure case's $13.9M loss doesn't threaten insolvency or
+covenant breach (a large enough downside can dominate an EV calculation via
+risk-aversion, which is why the model separately checks the deal doesn't
+bet the company) and (b) the probabilities are genuinely independent
+estimates, not a single analyst's confidence dressed up as a distribution
+— which is exactly why diligence findings (customer concentration,
+single-tenant architecture, engineers already interviewing) are used to
+<em>revise</em> the scenario probabilities and integration-cost line, not just to
+adjust the price.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Write the build/buy/partner comparison</strong> for a capability gap your

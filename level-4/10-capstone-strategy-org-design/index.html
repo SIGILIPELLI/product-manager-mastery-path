@@ -2217,6 +2217,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works-why-compounding-rates-not-levels-drive-every-number-in-this-capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: why compounding rates, not levels, drive every number in this capstone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stretch-goals" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2384,6 +2395,17 @@
     <span class="md-ellipsis">
       
         How this deliverable is judged
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-actually-works-why-compounding-rates-not-levels-drive-every-number-in-this-capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works: why compounding rates, not levels, drive every number in this capstone
       
     </span>
   </a>
@@ -3104,6 +3126,58 @@ people at random and writing down the variance in their answers.</p>
 </tr>
 </tbody>
 </table>
+<h2 id="how-it-actually-works-why-compounding-rates-not-levels-drive-every-number-in-this-capstone">How It Actually Works: why compounding rates, not levels, drive every number in this capstone<a class="headerlink" href="#how-it-actually-works-why-compounding-rates-not-levels-drive-every-number-in-this-capstone" title="Permanent link">&para;</a></h2>
+<p><strong>The Rule-of-40 recovery is pure exponential arithmetic, and it is worth
+tracing because it is the mechanism the whole capstone quietly relies on.</strong>
+R&amp;D cost grows at roughly the rate of engineer headcount (14.3% CAGR: 52 to
+80 over 3 years, <code>(80/52)^(1/3) - 1 ≈ 15.5%</code>), while revenue grows at 32.3%
+CAGR. Two exponentials with different bases diverge — <code>R&amp;D% = R&amp;D_cost(t) /
+Revenue(t) = R&amp;D_cost₀(1+r_cost)^t / Revenue₀(1+r_rev)^t = (R&amp;D%)₀ ×
+((1+r_cost)/(1+r_rev))^t</code>. Since <code>1.155/1.323 ≈ 0.873 &lt; 1</code>, this ratio
+shrinks geometrically every year regardless of any efficiency initiative —
+purely because the denominator's growth rate exceeds the numerator's. This
+is precisely why the module insists the recovery must be shown as a
+<em>consequence of the growth/cost-rate gap</em>, not claimed as an achievement of
+cost discipline: if someone proposes achieving the same 18.7% via cuts,
+they are solving a problem the compounding math had already solved,
+at the cost of the growth rate that was doing the real work.</p>
+<p><strong>Top-down vs. bottom-up divergence is what a sum of compounding sub-rates
+always produces relative to a single blended rate, and the gap grows with
+the dispersion between the sub-rates, not their average.</strong> The bottom-up
+model compounds each line at its own (higher-dispersion) rate — Decide at
+71/55/44%, Publish at 19/16/14% — while the top-down applies one smoothed
+rate (38/32/27%) to the whole. Because compounding is convex in the growth
+rate (a mix of high and low compounding sub-populations produces a higher
+sum than the same weighted-average rate applied uniformly, by Jensen's
+inequality applied to the convex function <code>(1+r)^t</code>), the bottom-up total
+is mechanically guaranteed to sit at or above a same-weighted-average
+top-down projection whenever the underlying growth rates genuinely differ
+— which is exactly the $13.4M, 11.1% gap observed, and exactly why
+committing to the lower, smoothed number is the structurally conservative
+choice rather than an arbitrary hedge.</p>
+<p><strong>The NRR-driven "single largest identified move" ($1,540,800) is the same
+compounding-exponent argument from Level 4 Module 2, scaled to the whole
+capstone.</strong> Moving 802 accounts from 97% to 116% NRR doesn't just add
+$1.54M this year — it changes those accounts' terminal-value exponent from
+<code>0.97^t</code> to <code>1.16^t</code>. Over the 3-year plan horizon that is <code>1.16³ = 1.56x</code>
+versus <code>0.97³ = 0.91x</code>, a 1.7x gap in accumulated value per dollar of
+starting ARR converted — which is why the strategy treats this move as
+structurally different in kind from ordinary upsell revenue, and why the
+matched-comparison caveat (is the NRR lift causal, or do better accounts
+just buy more?) is flagged as the single biggest uncertainty in the entire
+financial model: an error in the <em>causal</em> attribution compounds at the
+same exponential rate as the effect itself.</p>
+<p><strong>Why kill criteria are placed on leading indicators (trial-to-paid rate,
+labelled-examples-per-month) rather than lagging ones (ARR, NRR).</strong> A
+leading indicator changes on the timescale of the underlying mechanism (a
+trial converts in 60 days); a lagging one, like ARR, only reflects that
+change after it has compounded through a much longer accumulation period.
+Because compounding effects are slow to reveal themselves and fast to
+become expensive once they diverge, a kill criterion set on a lagging
+metric detects failure only after several compounding periods have already
+locked in the wrong trajectory — mechanically the same "detection gap"
+argument as the incident-response module's 47-minute cost, applied to a
+multi-quarter strategic bet instead of a multi-hour production incident.</p>
 <h2 id="stretch-goals">Stretch goals<a class="headerlink" href="#stretch-goals" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Run the matched comparison</strong> that settles the attach causality question:
