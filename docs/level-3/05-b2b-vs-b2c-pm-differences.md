@@ -183,6 +183,10 @@ customer.
 | B2B → B2C | Expecting to negotiate the roadmap with customers | There is no committee; there is a curve |
 | Either | Assuming the metric names mean the same thing | Define retention, activation and churn in writing on day one |
 
+## How It Actually Works
+
+B2B and B2C products diverge structurally because they sit on opposite ends of a "number of decision-makers per purchase" spectrum, and that single variable cascades into nearly every other difference: B2C optimizes for a single, fast, often-emotional decision (low friction, high volume), while B2B must satisfy multiple, slower, more rational stakeholders with different objective functions (the end user wants usability, the economic buyer wants ROI, IT wants security compliance) — which is why B2B sales cycles are measured in months and require multi-threaded champion-building, a mechanism that has nothing to do with product quality and everything to do with organizational decision theory. Feature requests behave very differently in each model because of sample-size and concentration effects: in B2C, a request from one user is statistically negligible noise against millions of users, so PMs prioritize by aggregate frequency; in B2B, a single request from a large account can represent a meaningful percentage of revenue, so prioritization legitimately (not just politically) needs to weight by account value, not just frequency — treating B2B feedback with a B2C aggregation mindset systematically under-serves your highest-revenue-concentration customers. Retention economics differ too: B2C's low switching cost means retention is won continuously through habit-formation loops, while B2B's high switching cost (data migration, retraining, contract terms) means churn is a lagging indicator that reveals problems that accumulated silently over quarters, which is why B2B PMs rely heavily on leading indicators like feature adoption depth and admin engagement rather than waiting for the renewal date to find out something is wrong.
+
 ## Exercise
 
 1. **Classify your product** on all three structural facts: is the buyer the

@@ -94,6 +94,10 @@ signal (Module 3) that can legitimately shift a RICE score's Impact or
 Confidence input. The PM follows up in writing within 48 hours either way,
 rather than letting the sales lead wonder if they were heard.
 
+## How It Actually Works
+
+Stakeholder management works by reducing "information asymmetry anxiety" — most stakeholder friction isn't disagreement about direction, it's stakeholders filling an information vacuum with worst-case assumptions because humans are loss-averse and, absent data, default to assuming the worse outcome (a well-documented cognitive bias). Regular, predictable status updates work mechanically because they convert an unbounded anxiety (unknown status, could be anything) into a bounded one (known status, specific and addressable), which is why cadence matters more than the sophistication of the update — a boring weekly email that always arrives beats a beautiful quarterly deck that's a surprise. The reason to tailor messaging by stakeholder (exec summary vs. engineering detail) isn't about "dumbing things down" — it's Cognitive Load Theory: each audience has different working-memory capacity available for your topic amid their other priorities, and requiring an exec to parse implementation detail to extract the one decision they need consumes their scarce attention, which they will not spend twice — burn that budget once and you lose their attention for future updates too.
+
 ## Exercise
 
 For the initiative you've been developing through this level's exercises,

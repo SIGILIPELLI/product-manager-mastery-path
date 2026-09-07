@@ -78,6 +78,10 @@ prioritization, but I can't commit a date today." This is a harder answer to
 give live than a vague "yeah, probably" — but it's the answer that keeps the
 roadmap trustworthy the next time it's shared.
 
+## How It Actually Works
+
+A roadmap functions as a coordination device under uncertainty, and the specific mechanism it exploits is that most of the value of planning comes from surfacing *dependencies and sequencing constraints*, not from the accuracy of any individual date. Theme-based (outcome) roadmaps outperform feature-list roadmaps with fixed dates because of a statistical property of software estimation: individual task estimates have high variance, but committing to a *date* forces false precision on top of that variance, producing a plan that's virtually guaranteed to be wrong in a way that erodes trust when it slips — whereas committing to an outcome ("reduce onboarding drop-off by 20%") lets the team change tactics without breaking the promise. The "now/next/later" horizon structure works because estimation uncertainty compounds with time distance — a two-week estimate is usually accurate within 20%, a six-month estimate can be off by 300%+, so putting a hard date on "later" items manufactures false confidence the data doesn't support; deliberately fuzzing distant commitments is a way of being honest about the actual shape of the underlying uncertainty rather than hiding it behind a precise-looking Gantt chart.
+
 ## Exercise
 
 Build a Now/Next/Later roadmap table (using the template above) with at

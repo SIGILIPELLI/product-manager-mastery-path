@@ -96,6 +96,10 @@ pixel-level design, and didn't build the sprint timeline themselves (the
 engineering lead did that, informed by the PRD). What the PM did was turn a
 noisy signal into a defined, prioritized, buildable plan — that's the job.
 
+## How It Actually Works
+
+The PM role exists to solve a specific coordination-cost problem, not because someone decided it would be nice to have a generalist. In any org building software, three kinds of uncertainty compound: what customers actually need (market risk), whether a design solves it usably (usability risk), and whether it can be built in the time/cost available (feasibility/business risk). Engineering is optimized to reduce feasibility risk (they know their codebase), design is optimized to reduce usability risk (they know interaction patterns), but *nobody* is naturally incentivized to own market risk full-time — it requires talking to customers, reading data, and saying no to stakeholders, none of which show up on an engineer's or designer's performance review. The PM role is an organizational patch: a single accountable owner for the risk category that otherwise falls through the cracks between functions. This is why PM authority is famously "responsibility without formal authority" — the PM doesn't manage engineers or designers, but sits at the one point in the org chart where all three risk types must be reconciled before a release ships. Teams that lack a PM don't lack "product thinking" abstractly; they lack a forcing function that makes someone answerable for whether the thing being built is worth building at all, which is why those teams reliably over-invest in build quality for the wrong feature.
+
 ## Exercise
 
 Pick a product you use regularly (a to-do app, a food delivery app, a game —

@@ -152,6 +152,10 @@ instead of +25%, the same test would have required 24,007 visitors — eight
 weeks — and would have run into the seasonal Q4 traffic spike. The MDE
 wasn't a statistical choice; it was a scheduling one.
 
+## How It Actually Works
+
+A/B testing derives its validity entirely from the statistics of sampling: because you're observing a *sample* of users, not the full population, any observed difference between control and variant could be real or could be random noise from which specific users happened to land in each bucket. Statistical significance (typically p < 0.05) is the mechanism for bounding that risk — it means that if there were truly no difference between variants, you'd see a result this extreme by chance less than 5% of the time, which is why a "significant" result is still wrong roughly 1 in 20 times by design, and why running many simultaneous metrics on one test ("p-hacking" via multiple comparisons) inflates your true false-positive rate far above 5% unless you correct for it (e.g., Bonferroni correction). Sample size math matters because the minimum detectable effect shrinks with the square root of sample size, not linearly — to detect a 2% lift instead of a 10% lift, you need roughly 25x more users, not 5x, which is why small products chasing tiny optimizations often run tests for months without ever reaching significance, while the same test on a 25x-larger effect would resolve in days. Statistical power (typically targeting 80%) is the flip side of significance — it's the probability of detecting a real effect if one exists, and underpowered tests are the hidden killer of experimentation programs: a "no significant difference" result from an underpowered test is not evidence of no effect, it's just evidence you didn't collect enough data to see it, a distinction constantly confused in practice.
+
 ## Exercise
 
 Design a complete experiment for your own product:

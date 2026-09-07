@@ -295,6 +295,63 @@ people at random and writing down the variance in their answers.
 | Risk | A generic list | Numbers and dates that fire automatically |
 | One-pager | A summary | Repeatable from memory by someone who did not write it |
 
+## How It Actually Works: why compounding rates, not levels, drive every number in this capstone
+
+**The Rule-of-40 recovery is pure exponential arithmetic, and it is worth
+tracing because it is the mechanism the whole capstone quietly relies on.**
+R&D cost grows at roughly the rate of engineer headcount (14.3% CAGR: 52 to
+80 over 3 years, `(80/52)^(1/3) - 1 ≈ 15.5%`), while revenue grows at 32.3%
+CAGR. Two exponentials with different bases diverge — `R&D% = R&D_cost(t) /
+Revenue(t) = R&D_cost₀(1+r_cost)^t / Revenue₀(1+r_rev)^t = (R&D%)₀ ×
+((1+r_cost)/(1+r_rev))^t`. Since `1.155/1.323 ≈ 0.873 < 1`, this ratio
+shrinks geometrically every year regardless of any efficiency initiative —
+purely because the denominator's growth rate exceeds the numerator's. This
+is precisely why the module insists the recovery must be shown as a
+*consequence of the growth/cost-rate gap*, not claimed as an achievement of
+cost discipline: if someone proposes achieving the same 18.7% via cuts,
+they are solving a problem the compounding math had already solved,
+at the cost of the growth rate that was doing the real work.
+
+**Top-down vs. bottom-up divergence is what a sum of compounding sub-rates
+always produces relative to a single blended rate, and the gap grows with
+the dispersion between the sub-rates, not their average.** The bottom-up
+model compounds each line at its own (higher-dispersion) rate — Decide at
+71/55/44%, Publish at 19/16/14% — while the top-down applies one smoothed
+rate (38/32/27%) to the whole. Because compounding is convex in the growth
+rate (a mix of high and low compounding sub-populations produces a higher
+sum than the same weighted-average rate applied uniformly, by Jensen's
+inequality applied to the convex function `(1+r)^t`), the bottom-up total
+is mechanically guaranteed to sit at or above a same-weighted-average
+top-down projection whenever the underlying growth rates genuinely differ
+— which is exactly the $13.4M, 11.1% gap observed, and exactly why
+committing to the lower, smoothed number is the structurally conservative
+choice rather than an arbitrary hedge.
+
+**The NRR-driven "single largest identified move" ($1,540,800) is the same
+compounding-exponent argument from Level 4 Module 2, scaled to the whole
+capstone.** Moving 802 accounts from 97% to 116% NRR doesn't just add
+$1.54M this year — it changes those accounts' terminal-value exponent from
+`0.97^t` to `1.16^t`. Over the 3-year plan horizon that is `1.16³ = 1.56x`
+versus `0.97³ = 0.91x`, a 1.7x gap in accumulated value per dollar of
+starting ARR converted — which is why the strategy treats this move as
+structurally different in kind from ordinary upsell revenue, and why the
+matched-comparison caveat (is the NRR lift causal, or do better accounts
+just buy more?) is flagged as the single biggest uncertainty in the entire
+financial model: an error in the *causal* attribution compounds at the
+same exponential rate as the effect itself.
+
+**Why kill criteria are placed on leading indicators (trial-to-paid rate,
+labelled-examples-per-month) rather than lagging ones (ARR, NRR).** A
+leading indicator changes on the timescale of the underlying mechanism (a
+trial converts in 60 days); a lagging one, like ARR, only reflects that
+change after it has compounded through a much longer accumulation period.
+Because compounding effects are slow to reveal themselves and fast to
+become expensive once they diverge, a kill criterion set on a lagging
+metric detects failure only after several compounding periods have already
+locked in the wrong trajectory — mechanically the same "detection gap"
+argument as the incident-response module's 47-minute cost, applied to a
+multi-quarter strategic bet instead of a multi-hour production incident.
+
 ## Stretch goals
 
 1. **Run the matched comparison** that settles the attach causality question:

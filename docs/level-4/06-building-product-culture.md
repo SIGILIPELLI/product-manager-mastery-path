@@ -193,6 +193,59 @@ osmosis at that rate.
 An onboarding pack made of real artefacts teaches culture faster than any
 values deck, because it is evidence rather than assertion.
 
+## How It Actually Works: reinforcement schedules and the meeting-cost arithmetic
+
+**Culture change is an operant-conditioning problem, not a persuasion
+problem.** Behaviour that is rewarded or visibly tolerated recurs;
+behaviour that produces no consequence extinguishes. This is why the
+levers are ranked "what gets rewarded > what gets tolerated > what you
+model > what you say": a reward changes the payoff of the behaviour every
+time it happens (a standing incentive), tolerance changes it only at the
+moment someone tests the boundary (an intermittent, high-salience signal),
+modelling and speech change only what people *believe* the payoff is,
+without touching the payoff itself. A values memo moves zero incentives,
+which is mechanically why it decays to nothing by week two — nobody's
+actual outcomes changed based on whether they read it. The reason
+"decline to walk past something once" outperforms a year of memos is that
+a single enforced consequence is a stronger, more concrete data point
+about the true reward function than a thousand words describing an
+aspirational one.
+
+**Why 44% "launches meeting criteria" is the correct number to have, not a
+crisis.** Before the norm change, success criteria didn't exist for 52% of
+launches, so the *implied* success rate was 100% by definition — a
+measurement artifact, not a real number. Setting criteria in advance and
+measuring against them converts an unfalsifiable claim into a falsifiable
+one, and any genuinely falsifiable prediction process should produce a
+realistic hit rate well under 100% — a portfolio of experiments run in
+good faith, most of which explore genuinely uncertain territory, *should*
+fail more often than it succeeds, the same statistical logic behind why a
+low-power, well-calibrated A/B testing program shows plenty of null
+results (Level 2's significance-testing material). A leadership team that
+punishes the newly visible 56% failure rate is optimizing for the
+appearance of success, which reintroduces the exact incentive that
+produced 34% pre-registration in the first place — teams stop testing
+things that might fail rather than stop failing.
+
+**The meeting-cost math is a straightforward throughput/latency trade
+computed as person-hours, and the reason it lands with executives is that
+it converts a fuzzy "too many meetings" complaint into the same currency as
+a headcount request.** `attendees × duration × frequency × fully_loaded_
+hourly_rate` gives the true cost of a standing meeting regardless of how
+useful any individual instance feels — at 22 attendees this is
+`22 × 1 × 50 = 1,100 person-hours/year` per meeting, or **$107,250** at
+$97.50/hour, before comparing it to any replacement. The written-update
+comparison works because it separates the *authoring* cost (fixed, borne
+once by whoever has the update) from the *consumption* cost (borne once
+per reader, but at a fraction of the time — reading a position takes
+minutes, generating and delivering one live takes an hour regardless of
+audience size). Converting a synchronous one-to-many broadcast into an
+asynchronous document is the same efficiency gain as batch processing over
+polling: the cost scales with the number of *authors* rather than the
+number of *attendees × authors*, which is why the saving (3,730 of 4,400
+hours, 85%) tracks almost exactly with the ratio of meeting attendees to
+document authors in the original setup.
+
 ## Exercise
 
 1. **Write down five norms you believe your org holds**, and name the

@@ -238,6 +238,62 @@ the status page without engineering, there is no saved query for affected
 accounts, and the credit policy does not exist. Finding those on a Wednesday
 afternoon costs nothing. Finding them at T+18 costs an hour of an incident.
 
+## How It Actually Works: why silent failures evade monitoring, and the statistics behind the circuit breaker
+
+**Why "everything is green" during a real crisis is not a monitoring
+failure but a category mismatch.** Standard health checks monitor
+*system-level* signals — error rate, latency, uptime — which answer "is
+the code executing as written?" A product crisis of this shape is a
+*behavioral* anomaly: the code executes perfectly and produces the wrong
+business outcome. These live in orthogonal signal spaces. Error-rate
+monitoring has zero statistical power to detect a calibration bug that
+makes every request succeed with a wrong answer, because "success" and
+"correct" are different predicates being conflated. This is the same
+distinction as the AI/ML module's confidence-threshold work: a system can
+be 100% "up" and 29% "precision," and only a monitor built on the second
+predicate — the *rate* of a specific class of action — will ever fire.
+
+**The three-sigma circuit breaker is a statistical process control
+mechanism, not an arbitrary safety margin.** If the trailing hourly rate of
+auto-applied changes is roughly normally distributed with mean μ and
+standard deviation σ, a rate exceeding μ + 3σ has a well-known small
+probability of occurring under normal operation (under a normal
+approximation, well under 1%) — so a breaker at that threshold trips
+almost exclusively on genuine anomalies, rarely on ordinary variance, which
+is what makes it safe to make the response *automatic* rather than
+advisory. The calibration bug that inflated confidence scores didn't just
+cross the 0.85 action threshold — it multiplied the *volume* of qualifying
+recommendations far outside the historical distribution's tail, which is a
+completely different, and far easier to detect statistically, signal than
+"is any individual recommendation wrong."
+
+**The prevention-to-incident cost ratio is an expected-value comparison
+run in advance, exactly like the AI break-even and M&A EV calculations
+elsewhere in this level.** `$1,126,738 / $26,628 ≈ 42×` is not merely a
+persuasive number — it is `cost_of_incident / cost_of_prevention`, and any
+ratio meaningfully above 1 means the guardrail work is positive expected
+value even before weighting by the probability the incident recurs. Because
+the incident's true cost compounds two structurally different terms — a
+one-time direct loss ($879,533: merchant loss plus service credits) and a
+recurring loss (churned ARR, $247,205, which persists every year those 83.6
+accounts would otherwise have renewed) — the *realized* multiple understates
+the true one; a churn-adjusted lifetime-value calculation would push the
+ratio well past 42x, which is the arithmetic reason boards fund
+guardrail work retroactively at a rate they never would proactively.
+
+**Detection-gap time is the dominant term in total incident cost precisely
+because the mispricing accrues linearly with exposure time.** Merchant loss
+is a function of `transaction_volume_per_minute × mispricing_rate ×
+minutes_exposed` — cutting detection time from 47 minutes to 5 minutes
+(a 9.4x reduction) would have cut the transacting-SKU count and therefore
+the direct loss by roughly the same factor, since the underlying rate of
+transactions per minute doesn't change, only the exposure window does. This
+is why "time to detect" is singled out as usually the biggest and cheapest
+number to fix: cost scales linearly with detection latency in most
+incidents of this shape, while diagnosis-and-fix time, once detected, is
+typically bounded by the complexity of the actual bug rather than by
+elapsed exposure.
+
 ## Exercise
 
 1. **Write your severity definitions** in terms of customer impact, and get

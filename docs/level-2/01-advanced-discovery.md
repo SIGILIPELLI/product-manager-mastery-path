@@ -167,6 +167,10 @@ fake-door link in the existing publish flow. Four of five read the diff and
 one caught a real pricing error in her own data — enough evidence to build,
 at a far smaller scope than the "full audit log" originally requested.
 
+## How It Actually Works
+
+Advanced discovery techniques (opportunity solution trees, continuous interviewing) work by attacking a specific statistical problem: small-sample qualitative research is highly susceptible to both confirmation bias (you hear what you're primed to hear) and sampling bias (whoever you can easily reach isn't representative). An opportunity solution tree forces explicit mapping from outcome → opportunities → solutions so that a solution can be traced back to *which* opportunity it addresses and *which* evidence supports that opportunity — this traceability is what lets a team notice when they've drifted into building a solution nobody validated a need for, because the tree makes the missing link visually obvious. Continuous interviewing (a standing weekly cadence rather than a one-off "discovery sprint") works because it decouples learning from any single roadmap decision, avoiding a specific bias called "discovery theater": teams that only do discovery right before they've already half-decided what to build unconsciously steer interviews toward confirming that choice. The reason for triangulating opportunities against both frequency (how many customers) and intensity (how painful) before promoting one to a bet is that these two dimensions have different failure modes — a high-frequency/low-intensity opportunity yields a "nice to have" nobody will switch products for, while a low-frequency/high-intensity one may be a great niche bet but a poor fit for a broad-market roadmap; conflating them is why so many roadmaps end up as a random walk of shallow, low-impact fixes.
+
 ## Exercise
 
 Pick a product you work on (or the ListUp scenario) and produce:

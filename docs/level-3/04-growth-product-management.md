@@ -206,6 +206,10 @@ your own forecast — out loud — is what makes the next forecast believed.
 | Underpowered tests everywhere | Everything is "trending positive" | Compute sample size first; if it's not runnable, change the metric |
 | Growth team owns growth | Core team feels unaccountable for retention | Growth owns the system; every team owns its own retention |
 
+## How It Actually Works
+
+Growth PM work runs on a specific mathematical model: the AARRR funnel (Acquisition, Activation, Retention, Referral, Revenue) treats a business as a system of conversion rates chained together, and the compounding nature of that chain (each stage's output is the next stage's input) is exactly why fixing retention almost always beats fixing acquisition for the same effort — a leaky-bucket business pouring more users into a funnel with poor retention loses most of them anyway, so retention improvements compound forward through every future acquisition cohort, while acquisition improvements only affect the current cohort once. Activation is the highest-leverage stage specifically because of a measurable phenomenon: users who reach a defined "aha moment" within their first session show dramatically different long-term retention curves than those who don't (this is the empirical basis behind metrics like Facebook's famous "7 friends in 10 days"), meaning activation rate functions as a leading indicator that predicts retention weeks before it's observable directly. Growth experimentation velocity (running many small tests per week) works because of the same statistical logic behind A/B testing sample sizes: most individual growth ideas fail (a well-documented ~70-90% failure rate across published growth case studies), so the expected value of a growth program comes from the volume and speed of testing, not the brilliance of any single idea — a slow-moving growth team with "better" ideas will still underperform a fast-moving team running many mediocre ones, purely from the statistics of iteration count.
+
 ## Exercise
 
 Build the growth model for a product you know, then plan a quarter from it.

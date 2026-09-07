@@ -204,6 +204,55 @@ credibility than three quarters of good results restore.
 | Reading the slides aloud | Wastes the only expensive hour you get | Send the pre-read 48 hours ahead; spend the meeting on discussion |
 | Asking for headcount without a trade-off | You are asking them to do your prioritisation | Every ask names what it displaces |
 
+## How It Actually Works: the compounding arithmetic behind every board number
+
+**Annualized NRR is a compounding, not an averaging, calculation.** The
+bridge shows a *quarterly* retention factor of `retained ÷ starting =
+$50,510,000 / $49,100,000 = 1.02871`. Annualizing compounds that factor
+four times rather than multiplying the quarterly percentage by four:
+
+```
+annualized NRR = (retained/starting)^4 = 1.02871^4 ≈ 1.1198 → 112.0%
+```
+
+Multiplying instead of compounding would give `1 + 4×0.02871 = 1.1148`, or
+111.5% — close enough here to hide the error, but the gap widens sharply at
+higher quarterly retention rates (a 5%-per-quarter business is 21.6%
+compounded annually versus 20% simple-multiplied), which is exactly the
+kind of silent arithmetic error a board member's own model will catch if
+your reported number doesn't reconcile with the bridge you showed on the
+previous slide. This is why the module insists on computing NRR *from* the
+bridge rather than from a dashboard: a dashboard may be doing either
+calculation, and only reconciling both against the raw bridge numbers each
+quarter proves which one it is.
+
+**The magic number and burn multiple are both marginal-efficiency ratios,
+and their denominators explain why "too good" numbers need a structural
+explanation.** Magic number is `4 × ΔARR_quarterly / S&M_prior_quarter` —
+it measures ARR generated per dollar of prior-quarter sales spend. When 71%
+of new ARR closes with no human involved (Level 4, Module 3's PLG
+mechanism), S&M spend only buys the remaining 29%, so the same
+$3.3M of net-new ARR is being divided by an S&M base that is
+structurally smaller than a sales-led peer's — the ratio isn't measuring
+better sales efficiency, it's measuring a different mix of who paid for
+the growth. A board member who has only seen the sales-led version of this
+ratio will assume the number is either fabricated or unsustainable unless
+the mix effect is named explicitly, in advance, in the same breath as the
+number itself.
+
+**Why the falsifier ("what would make me wrong") is the single highest-
+leverage sentence in the ask.** A prediction with no stated failure
+condition cannot be checked, and a board learns whom to trust from a
+resolved track record, not from confidence at the time of the ask. Naming
+`acceptance rate stalls below 82%` in advance converts "Decide's marginal
+ROI is $620,000" from an unfalsifiable assertion into a testable claim with
+a public deadline (the Q1 review) — the same discipline used for kill
+criteria in the portfolio module, applied to a single hiring ask instead of
+an entire product line. Mechanically, it works because it pre-commits you
+to updating in public regardless of which way the result breaks, which is
+the only thing that distinguishes calibrated judgment from a series of
+lucky or unlucky guesses viewed after the fact.
+
 ## Exercise
 
 1. **Rewrite your last executive update as a four-part spine**: bottom line,

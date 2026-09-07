@@ -209,6 +209,62 @@ grounds to overrule you** — that is their function, and a feature that
 cannot be overruled on informed grounds will not be trusted with anything
 expensive.
 
+## How It Actually Works: the confusion-matrix mechanics behind the threshold curve
+
+**Break-even precision is a rearrangement of expected value, and it is the
+same algebra behind every cost-sensitive classification problem.** For a
+binary auto-apply decision with gain `g` on a true positive and loss `l` on
+a false positive, expected value per action is `p·g − (1−p)·l`, and setting
+this to zero and solving for `p` gives `p* = l / (g + l)`. For Decide:
+`34 / (11 + 34) = 0.756`. This threshold is entirely a function of the
+gain/loss ratio, not of model quality — a *better* model shifts the
+precision-vs-threshold curve, but it does not move where break-even sits.
+This is why the module can state the 75.6% figure before a single engineer
+looks at the model: it is a property of the business's cost structure, and
+the model's job is simply to clear it at usable volume.
+
+**The precision/recall trade in the threshold table is the confusion
+matrix in motion.** Raising the confidence cutoff moves cases from the
+"acted on" bucket to the "not acted on" bucket in a specific order — highest
+confidence first — which mechanically raises precision (fewer of the
+remaining acted-on cases are wrong) while lowering recall (fewer of the
+total correct cases get acted on at all), because precision =
+`TP/(TP+FP)` shrinks its denominator faster than its numerator as the
+threshold rises, while recall = `TP/(TP+FN)` only loses numerator. Net
+margin is `TP·g − FP·l`, which is *not* monotonic in the threshold: it
+rises as increasingly precise recommendations get included, peaks where the
+marginal recommendation's expected value crosses zero, and falls past that
+point because every stricter cutoff after the peak was excluding actions
+that were still net-positive. The "interior optimum" language is exactly
+this: the peak of `TP(θ)·g − FP(θ)·l` as a function of threshold θ, and
+0.85 is empirically where that derivative crosses zero for Decide's
+distribution of confidence scores — it is unrelated to the popular
+intuition that "more confident is always better."
+
+**Why aggregate accuracy hides subgroup collapse — Simpson's-paradox-style
+aggregation.** A model's overall score is a volume-weighted average across
+segments: `accuracy_overall = Σ (n_i / N) · accuracy_i`. A segment that is
+small in volume (a rare SKU category, say 3% of traffic) can go from 90% to
+40% accuracy while moving the overall weighted average by only
+`0.03 × 0.50 = 1.5 points` — invisible against normal quarter-to-quarter
+noise, catastrophic to any customer concentrated in that segment. This is
+mechanically identical to why per-slice regression bars are required
+rather than a single aggregate bar: an aggregate metric is a weighted sum,
+and any weighted sum can hide an arbitrarily large change in a
+low-weight component.
+
+**The heavy-tailed cost distribution is a Pareto-shaped consumption curve,
+and blended margin is the wrong statistic to manage it by.** Mean cost per
+account ($6,097.36 / 1,107 ≈ $5.51/month) implies comfortable 88.8% gross
+margin, but the *distribution* of cost per account is far from normal:
+55 accounts (5%) generate 40% of usage, so their individual cost
+($44.34) sits roughly 8x above the population mean while the remaining
+95% sit roughly 0.63x below it. Any pricing or margin plan built on the
+mean rather than the tail's growth rate will be blindsided exactly when it
+matters — the tail's share of volume is precisely the term (`n_i/N`
+weighting again) that a rising-adoption business grows fastest, since heavy
+users are disproportionately the ones who renew and expand.
+
 ## Exercise
 
 1. **Write the error-cost model** for one AI feature: the value of a correct

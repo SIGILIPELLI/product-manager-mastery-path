@@ -170,6 +170,10 @@ with 4+ channels. That is the lesson of the third horizon — a launch that
 reaches everyone and changes no behaviour is a failed launch with good
 week-1 numbers.
 
+## How It Actually Works
+
+A go-to-market plan works by sequencing which market segment you target first based on a specific tradeoff: early segments should have high willingness-to-pay-for-the-problem and low friction to reach, even if they're not the largest addressable market, because the mechanism of GTM is compounding proof, not raw scale — each successful segment produces case studies, referenceable logos, and refined messaging that lower the cost of acquiring the *next* segment. This is why "beachhead market" strategy (targeting a narrow niche before expanding) consistently outperforms "sell to everyone" launches: a diffuse launch spreads a fixed marketing budget across many messages, none of which resonates strongly enough to clear anyone's attention threshold, whereas a concentrated launch can actually reach the density needed for word-of-mouth to kick in (a network effect that requires a minimum local concentration of aware users, not just a large absolute number spread thin). Positioning statements work as a coordination mechanism, not persuasion — they exist so that sales, marketing, and product all describe the same value proposition using the same category and comparison frame, because inconsistent framing forces the prospect to do the categorization work themselves, and cognitive-load research shows that added mental effort at any decision point measurably lowers conversion, independent of the offer's actual merit.
+
 ## Exercise
 
 Pick a feature you're shipping in the next quarter and produce:

@@ -84,6 +84,10 @@ statement (notifications don't need to be truly instant for this use case)
 and greenlights polling, documenting why in the PRD's open-questions log so
 the decision isn't revisited without new information.
 
+## How It Actually Works
+
+Cross-functional friction between PM, design, and engineering is not primarily a communication problem — it's a structural problem created by each function optimizing a different, locally-rational objective function under time pressure. Engineers are evaluated on shipping working, maintainable code, so they will (correctly, from their incentive structure) push toward the technically simplest path even when it degrades UX; designers are evaluated on usability and craft, so they will push toward the more polished path even when it costs 3x the engineering time; PMs are evaluated on outcomes, so they sit in the middle absorbing the tension. The reason "designing in the browser" / working in shared prototypes reduces friction isn't just faster feedback — it collapses the translation loss that happens when design specs (a lossy visual representation of intent) get handed to engineering and re-interpreted, the same lossy-compression problem that plagues written requirements. RACI-style role clarity (who's Responsible, Accountable, Consulted, Informed) works because ambiguous decision rights create "decision debt" — every unresolved ownership question resurfaces on every subsequent related decision, so a team without RACI clarity re-litigates the same authority question dozens of times across a project, burning far more total time than a five-minute upfront conversation would have cost.
+
 ## Exercise
 
 Using the PRD pieces you drafted in Module 5's exercise, write:

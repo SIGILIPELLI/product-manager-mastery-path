@@ -163,6 +163,10 @@ straight at the API-key hypothesis.
 was worth mentioning and that three decimal places weren't. The "good
 enough" line is what turned a three-day job into an afternoon.
 
+## How It Actually Works
+
+The PM/data-team relationship is structured around a specific division of statistical labor: data teams own internal validity (was the analysis done correctly — right population, right controls, right test), while PMs own external validity (does this analytical question, even if perfectly answered, actually address the business decision at hand) — most friction between the two groups traces back to one side implicitly assuming they also own the other's job. Writing a clear analysis request (business question, decision it informs, and what action each possible answer would trigger) works because it prevents a specific failure mode called the "silent metric mismatch," where a data analyst optimizes an elegant answer to a well-posed statistical question that turns out to be the wrong question, discovered only after the analysis is delivered and doesn't move the intended decision. The reason to loop data teams in *before* a metric is chosen as a target, not after, is that Goodhart's Law effects are much easier to anticipate at design time (a data scientist can often predict how a metric will be gamed) than to detect after the fact once behavior has already adapted to the target and the underlying data-generating process has shifted.
+
 ## Exercise
 
 1. **Write an analysis brief** for a real question you have right now, using

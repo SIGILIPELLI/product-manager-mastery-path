@@ -101,6 +101,10 @@ that motivation in mind for every subsequent design and prioritization
 decision, instead of designing for an imagined "power user who loves
 detailed categorization," which none of the five interviewees resembled.
 
+## How It Actually Works
+
+"The customer isn't always the user" is not a platitude — it reflects a real economic structure called principal-agent misalignment. In B2B software, the buyer (economic buyer), the user, and sometimes the approver (IT/security) are different people with different, sometimes opposing incentive functions: the buyer optimizes for cost and risk reduction, the user optimizes for task completion time, and if you only interview the buyer you'll build for a person who will never touch the product. This is why persona work that stops at demographics is nearly worthless — demographics don't predict behavior, *jobs* do. The mechanism behind Jobs-to-be-Done interviewing is that people don't buy products, they "hire" them to make progress on a specific job, and the actual causal chain of a purchase decision runs: struggling moment → passive looking → active looking → deciding → consuming, with anxiety (will this work?) and inertia (habit, switching cost) acting as opposing forces at the decision point. If your interview only captures what the customer *says* they want (stated preference), you get social-desirability bias and forecasting error, because people are systematically bad at predicting their own future behavior (this is the same mechanism behind why surveys about willingness-to-pay overstate actual purchase rates). Good discovery interviews are structured to extract revealed preference — actual past behavior and specific moments of struggle — because behavior under real constraints is a far better predictor of future behavior than stated intent.
+
 ## Exercise
 
 Recruit (or imagine, if you're practicing solo) three people who use a

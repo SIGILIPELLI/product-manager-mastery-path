@@ -200,6 +200,53 @@ question with a plan.** "What would you do in your first 90 days" is not
 asking for a list of activities; it is asking what you would need to learn
 and what decision that learning would inform.
 
+## How It Actually Works: the equity-vesting math and signalling mechanics behind career progression
+
+**Why equity share compounds faster than base as a mechanical consequence
+of how vesting is priced, not just company generosity.** A standard grant
+vests over four years, so each year's equity comp is a claim on 1/4 of a
+grant priced at issuance — and each subsequent level's grant is issued at a
+later valuation, typically higher than the last. If the company's valuation
+grows at rate `g` per year and each level's grant is sized as a multiple of
+current cash comp, total equity value scales with both the increasing grant
+size *and* the compounding valuation base: `equity_value ≈ grant_size ×
+(1+g)^years_held`. This is why the equity share climbs geometrically
+(17.3%→52.6%) rather than linearly with base salary (which merely scales
+arithmetically level to level) — you're not just being paid more, you're
+being paid more in an asset that is itself compounding, which is exactly
+why "refresh cadence" matters more than base at senior levels: a grant with
+no refresh stops compounding the moment the original four-year clock runs
+out, while base and bonus continue accruing regardless.
+
+**The VP comp step (+60.4%) is a risk premium, and it prices a specific,
+measurable failure rate.** In compensation theory, a step-up that exceeds
+what a role's marginal output alone would justify functions like a risk
+premium — it compensates for the higher variance of outcomes at that level
+(a VP who fails is usually replaced within 12–18 months; a Senior PM who
+underperforms usually is coached first). The org-design module's own
+observation that VP failure often looks like "becoming a scheduler" is the
+concrete failure mode this premium is pricing: the company is paying extra
+specifically because a meaningful fraction of VP hires and promotions do
+not succeed at the transition, and the premium has to be large enough to
+attract candidates willing to bear that personal risk.
+
+**Why naming your own gap changes the outcome — it converts private
+information into a testable claim.** Calibration committees operate under
+incomplete information: they cannot directly observe your competency,
+only proxies (packet, testimony, track record). A candidate who omits a
+known weakness leaves the committee to *infer* it from noisier signals,
+and inference under uncertainty defaults to the most available negative
+data point in the room, often worse and less specific than the truth. By
+contrast, self-naming the gap and pairing it with a bounded assignment
+(Priya's dotted-line manager-of-managers stint) converts an open-ended,
+unfalsifiable judgment ("is she ready?") into a falsifiable one with a
+fixed evaluation window — the same falsifier discipline used for board
+asks and kill criteria elsewhere in this level, applied to a promotion
+decision. This is mechanically why "keep doing what you're doing" is
+unfalsifiable and can recur indefinitely: it names no specific missing
+skill and sets no evaluation date, so there is no evidence threshold that
+would ever resolve it either way.
+
 ## Exercise
 
 1. **Name your current transition** and write the one behaviour you are

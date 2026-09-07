@@ -180,6 +180,57 @@ effect over two years is an onboarding flow nobody would have designed.
 Make activation a mandatory guardrail metric on every launch, at every
 group, and review the trend annually against a holdout.
 
+## How It Actually Works: the expected-value math behind who gets a human
+
+**EV per touch is a decomposition, not a lookup.** The formula behind every
+row in the segment table is:
+
+```
+EV per touch = (assisted_conv - self_serve_conv) × ACV_uplift - cost_per_touch
+ROI          = (EV per touch + cost_per_touch) / cost_per_touch
+             = incremental_revenue_per_touch / cost_per_touch
+```
+
+Segment A: `(0.14 - 0.05) × $14,000 = $1,260` incremental revenue per touch,
+against a $559 cost, giving `$1,260 / $559 = 2.25×`. Segment C:
+`(0.09 - 0.035) × $1,920 = $105.60` against the same $559 cost, giving
+`0.19×`. The lift (percentage points of conversion) barely differs between
+segments A and C — 9.0pt vs 5.5pt — but ROI differs by more than 10x,
+because ROI is driven by the **product of lift and deal size**, and deal
+size varies by 7.3x across segments while lift only varies by 1.6x. This is
+the concrete reason a single PQL score threshold fails at scale: score
+alone captures readiness (the lift term) but says nothing about the value
+term, and a low-value, high-readiness account can still have ROI below 1.0.
+
+**Why summing individual "wins" produces an aggregate loss.** Every touched
+account in segment C shows positive incremental ARR when measured in
+isolation ($105.60 > $0 — some sales are attributable to the touch), so a
+rep and their manager can honestly report a win. The aggregate math is
+different because cost is linear in touches while the per-touch revenue is
+fixed by segment: summing `4,060 × $559 = $2,268,824` in cost against
+`430×$1,260 + 890×$273×(dilution) + 2,740×$106×(dilution)`-style blended
+revenue nets negative once B and C's sub-$559 per-touch revenue drags the
+average below cost. The fallacy is treating "this touch had positive
+attributable revenue" (true, locally) as evidence that "this program has
+positive ROI" (false, globally) — the correct test is always
+`marginal revenue per touch vs. marginal cost per touch`, applied
+segment-by-segment, never averaged across a population with 7x internal
+variance in deal size.
+
+**The product-substitute comparison is a fixed-cost-vs-variable-cost
+crossover.** An AE's $559/touch is a marginal cost that recurs every time
+(and every year) an account is touched. An in-product prompt's $19,020 is a
+one-time fixed cost whose per-account marginal cost is ~$0. The crossover
+point — the touch volume at which the AE's cumulative cost exceeds the
+prompt's build cost — is `$19,020 / $559 ≈ 34 touches`. Any segment
+expected to need more than 34 touches over the asset's lifetime is
+structurally better served by a product mechanism than by headcount, which
+is why B and C (3,630 accounts) go to a paywall prompt while A (430
+accounts, each worth 25x more per conversion) goes to a human: the
+crossover math and the ROI math point the same direction for different
+reasons — cost amortization for the former, deal-size economics for the
+latter.
+
 ## Exercise
 
 1. **Build your PQL model** with all three parts — fit, intent, value at

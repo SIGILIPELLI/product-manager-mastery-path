@@ -82,6 +82,10 @@ in week-3 team retention within 6 weeks of launch, measured against the
 current 35% baseline" — a leading, specific, measurable target that plainly
 ties back to the North Star.
 
+## How It Actually Works
+
+The reason "vanity metrics" mislead is a specific statistical failure: they're metrics that trend upward under almost any condition (e.g., total signups, page views) because they accumulate monotonically and correlate more with the passage of time and marketing spend than with product quality — they lack a *denominator* that would reveal rate or ratio, which is where the real signal lives. A north star metric works as an organizational tool because of Goodhart's Law (when a measure becomes a target, it ceases to be a good measure): teams will optimize whatever they're measured on, so the choice of metric silently redirects behavior, meaning the metric selection process is really an incentive-design exercise disguised as an analytics exercise. Leading vs. lagging indicators matter mechanically because of measurement latency — revenue and retention (lagging) take weeks or months to move and reflect decisions made long ago, while activation rate or feature adoption (leading) move within days and are causally closer to the decisions you're making this week, so a team that only watches lagging metrics is flying with a multi-week-delayed instrument panel, reacting to problems that are already too old to cheaply fix.
+
 ## Exercise
 
 For the initiative you've been building a PRD around (Modules 3-6), write:

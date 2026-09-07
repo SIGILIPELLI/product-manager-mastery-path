@@ -192,6 +192,10 @@ Track supply and demand separately. A directory with 40 apps and 200
 installs is failing differently from one with 3 apps and 515 installs, and
 the fixes are opposite.
 
+## How It Actually Works
+
+Platform strategy differs from product strategy because it targets a different kind of value creation: a product creates value by directly solving a user's problem, while a platform creates value by reducing the transaction cost between two or more other groups (e.g., developers and end users) who would otherwise struggle to find and trust each other. The mechanism behind platform "chicken-and-egg" problems is a network effect with a critical mass threshold — value to each side is a function of the *size of the other side*, so below some minimum density neither side has enough incentive to join, and above it the platform becomes self-reinforcing (more users attract more developers, which attracts more users) — this is why nearly all successful platform launches use an artificial subsidy or a single-player-mode bootstrap (value that exists even with zero of the other side present) to cross that threshold before network effects can take over naturally. API design as a strategic lever works because an API is really a distribution mechanism for your platform's core logic — every additional integration point is a new, largely free acquisition channel, but each one also creates a long-term maintenance and versioning liability (a compatibility promise you must keep for as long as third parties depend on it), which is why platform governance (deprecation policy, versioning strategy) is a genuine strategic decision, not just an engineering detail.
+
 ## Exercise
 
 Take a product you work on and produce a platform decision, not a platform

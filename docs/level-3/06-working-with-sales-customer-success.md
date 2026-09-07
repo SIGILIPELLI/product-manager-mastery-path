@@ -186,6 +186,10 @@ The fourth option is legitimate and underused. Executives can accept losing
 a deal on purpose. What they cannot accept is discovering it happened by
 accident.
 
+## How It Actually Works
+
+The PM-sales-CS relationship is structured by a specific information flow problem: sales and CS sit closest to real customer conversations (a rich, high-frequency but unstructured data source), while PM sits closest to the aggregate product data (a structured but lower-fidelity data source), and most friction stems from each side implicitly treating their own data as sufficient without the other. The mechanism behind "one-off feature request" escalation problems is a sampling bias: sales and CS naturally over-index on whichever customer is currently loudest or closest to a renewal/close date, because that's the deal in front of them right now, while the PM's job is to filter that recency-biased signal against the full customer base's aggregate needs — a good intake process (a structured request log with account value, frequency, and urgency) exists specifically to strip the recency bias out of raw frontline feedback before it reaches prioritization. Win/loss debriefs and QBR (quarterly business review) participation work as a discovery channel because they sample from the highest-stakes moments in the customer relationship (a decision to buy, renew, or churn), and high-stakes moments reveal true priorities far more reliably than routine usage, because people reveal what actually matters to them when a real decision with real consequences is on the line, not through what they say matters in a low-stakes survey.
+
 ## Exercise
 
 1. **Design the intake form** with your six required fields, and write the

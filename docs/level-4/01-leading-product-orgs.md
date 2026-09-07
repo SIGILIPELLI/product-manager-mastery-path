@@ -198,6 +198,69 @@ The last row is measured by actually asking, in skip-levels, and writing
 down what people say. The variance in those answers is the most accurate
 measure of your communication that exists.
 
+## How It Actually Works: the coordination math behind org design
+
+Every intuition above ("re-orgs help," "flat orgs get chaotic," "8 squads was
+too many") is actually a claim about a specific piece of combinatorics:
+**communication overhead grows quadratically with team count, not linearly.**
+
+For *n* peer teams (or people) that must coordinate pairwise, the number of
+potential relationships is:
+
+```
+pairs = n(n-1) / 2
+```
+
+At ListUp's 8 opportunistic squads: `8 × 7 / 2 = 28` potential pairwise
+relationships. Split into groups of 3, 3, 2: intra-group pairs are
+`3+3+1 = 7`, and cross-group pairs (which must now go through a Director,
+not you) are the product of group sizes summed pairwise — `3×3 + 3×2 + 3×2 =
+21`, for 28 total, but only 21 (down from 28) ever reach a boundary that
+requires cross-group negotiation, and *none* of the 7 intra-group ones reach
+you at all. This is why the measured cross-group dependency count fell from
+34 to 12 two quarters later — you didn't reduce how much the product needed
+to coordinate, you moved most of the coordination inside a boundary a
+Director can resolve without you, and shrank the surface area exposed
+between groups.
+
+This is the same mechanics as **Brooks's Law** ("adding people to a late
+project makes it later"): a new person doesn't just add their own output,
+they add `n-1` new communication links that have to be maintained by
+everyone already there. A VP doing "9 hours a week of arbitration" wasn't
+short on time-management skill — 9 hours divided across a graph with 28
+edges is 19 minutes per edge per week, which is roughly enough time to
+receive an update and not enough to actually resolve a hard trade-off. Cut
+the exposed edges to 21, and even without changing the VP's calendar, each
+edge gets 26 minutes; group them 4/4 instead of 3/3/2 and you get fewer,
+denser edges again. **The org chart is a graph-partitioning problem**: you
+are choosing the cut that minimizes edges crossing the cut, subject to the
+constraint that each partition still contains a full path from decision to
+shipped customer value (the "ship without another team's sprint" test).
+
+**Span of control compounds the same way vertically.** If a VP has *d*
+direct reports and each of those has *d* reports, decision latency for
+anything that must climb to the VP and back down is proportional to
+`2 log_d(N)` hops for an org of size *N* — which is why the ratio work
+(6–8 engineers/PM, 4–7 reports/manager) isn't arbitrary HR guidance: too
+wide a span (say 15 direct reports) means each 1:1 gets diluted below the
+threshold needed to actually coach rather than just status-check (Dunbar's
+proposed working-relationship ceiling is commonly cited around 15
+meaningful relationships a person can actively track); too narrow (2 direct
+reports) adds hops and cost with no coordination benefit. The 4–7 anchor is
+the range where a manager can hold real context on every report without the
+tree growing so tall that decisions take multiple round trips.
+
+**Decision-rights frameworks (RAPID, DACI) are a fix for a specific failure
+mode this math predicts**: when *n* is large and no single node is marked
+as the decider, every edge in the graph becomes a candidate veto point, and
+the expected time to decide something scales with the number of people who
+*could* object, not the number who actually would. Naming one Recommender
+and one Decider per decision collapses an O(n) consensus process into O(1)
+— everyone else's input is solicited once, not negotiated indefinitely.
+That is the concrete mechanism behind "publish the new decision rights, not
+just the boxes": the boxes describe the graph's partition, the decision
+rights describe which edges carry a veto and which just carry information.
+
 ## Exercise
 
 1. **Count your decisions.** For two weeks, log every decision that required

@@ -229,6 +229,10 @@ test of the migration).
 | Putting the best feature in the cheapest tier | Wanting everyone to love it | Put it in the tier you want people to land in |
 | Changing price without changing packaging | Simplest to ship | A packaging change gives customers a story; a bare increase gives them a grievance |
 
+## How It Actually Works
+
+Pricing model choice works by aligning the metering unit with the customer's own perceived value driver, and the underlying mechanism is that a pricing metric that scales *faster* than the value a customer receives creates resentment and churn risk (over-charging as they grow), while one that scales *slower* leaves revenue on the table and caps growth-stage monetization — this is why usage-based and seat-based pricing produce very different unit economics even for the same underlying product, because they track different proxies for value delivered. Van Westendorp and similar willingness-to-pay surveys work by triangulating four price points (too cheap, cheap, expensive, too expensive) rather than asking directly "what would you pay," because direct willingness-to-pay questions suffer from strong social-desirability and anchoring bias — respondents systematically lowball a direct question but reveal a more honest range through the indirect four-point method, since each question forces a different, less gameable judgment. Price elasticity — the percentage change in demand per percentage change in price — is the actual mathematical justification behind "test price increases in small increments": if demand is inelastic (percentage drop in buyers is smaller than percentage price increase), revenue rises even as some customers churn, but if you don't know your elasticity in advance, an aggressive price hike can push you past the inflection point where the same math flips to a net revenue loss, which is why price testing must be incremental and instrumented rather than a single large jump.
+
 ## Exercise
 
 Take a product you know well — yours, or one you use daily — and produce a

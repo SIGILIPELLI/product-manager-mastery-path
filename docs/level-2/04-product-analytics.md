@@ -162,6 +162,10 @@ per cohort, compounding). Three data sources — funnel, cohort, interviews —
 pointing at the same step. That triangulation is what makes an analytics
 finding safe to bet a quarter on.
 
+## How It Actually Works
+
+Product analytics works by converting user behavior into a state machine of events, and the reason event taxonomy design matters so much is that a poorly named or duplicated event (e.g., "Signup" fired from three different code paths with inconsistent properties) silently corrupts every downstream funnel and retention calculation built on it — analytics debt compounds exactly like technical debt, and it's invisible until a metric quietly stops making sense. Cohort analysis works because it controls for a critical confounder: time. Comparing "all users active this week" against "all users active last week" mixes new users (who behave very differently) with tenured ones, while cohorting by signup week isolates a consistent population and lets you see how behavior decays or improves purely as a function of product tenure — this is what makes a retention curve meaningful instead of noise. Funnel analysis exploits the mathematical fact that conversion rates *compound multiplicatively* across steps — a funnel with five 80%-conversion steps only delivers 33% of users end-to-end (0.8^5), which is why teams chasing "one big redesign" often get less lift than fixing the single worst-converting step, since eliminating one 50%-conversion bottleneck in an otherwise-healthy funnel has outsized leverage compared to marginal improvements spread across already-strong steps.
+
 ## Exercise
 
 Using your own product's analytics (or ListUp's numbers):

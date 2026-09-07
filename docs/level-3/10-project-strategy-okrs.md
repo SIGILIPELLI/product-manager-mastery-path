@@ -270,6 +270,10 @@ more work than the strategy creates.
 - **The falsifiers have thresholds and dates**, so abandoning the strategy is
   a pre-made decision rather than an argument.
 
+## How It Actually Works
+
+This capstone artifact works as a decision-forcing document precisely because it chains several mechanisms you've studied individually into one causal argument: the diagnosis (why did last year's strategy underperform) has to be evidence-based rather than face-saving, because a diagnosis that avoids uncomfortable truths produces a guiding policy that doesn't actually address the real cause, the same failure mode covered in strategy fundamentals. The financial bridge section works because it forces the strategic narrative to reconcile with unit economics — a strategy can sound coherent in prose while being arithmetically impossible (the target revenue doesn't fit inside plausible conversion rates and market size), and only forcing the numbers to close catches that class of error before resources are committed. Company OKRs cascading into squad-level alignment exploits the same coordination mechanism as OKRs generally: without an explicit link from a squad's quarterly key results back to the company diagnosis, squads default to locally-rational but globally-misaligned priorities, each optimizing their own visible metric while the actual strategic gap goes unaddressed — the entire document's value is in making that chain of causation explicit and falsifiable enough that a reviewer six months later can check, objectively, whether the "if-then" logic actually played out as predicted.
+
 ## Stretch goals
 
 Write the same document for your own product. Match it section for section,

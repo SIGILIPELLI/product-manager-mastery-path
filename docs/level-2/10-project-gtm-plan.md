@@ -222,6 +222,10 @@ moment:
 - Kill criteria were agreed in advance, so shutting the paid channel down
   was a decision the plan had already made.
 
+## How It Actually Works
+
+A GTM plan's internal logic runs on a single quantitative chain: target segment size × expected conversion rate × average deal value must clear the cost of the acquisition channels chosen to reach it (CAC), and the entire plan is really a hypothesis about where that chain will break first — most GTM plans fail not from a bad product but from an unvalidated assumption buried in one link of that chain (usually conversion rate, which is guessed pre-launch and routinely overestimated because early-adopter beta users convert far better than the broader target segment). The reason messaging should be tested before a full launch budget is committed is a sequencing argument from experimentation: message-market fit is cheap and fast to test (landing pages, small ad spend, A/B'd copy) relative to the cost of a full launch, so validating the cheapest, most reversible assumption first (does this message resonate) before spending on the most expensive, least reversible one (broad paid acquisition at scale) minimizes the expected cost of being wrong. Launch tiering (soft launch → limited release → GA) works because it exploits the same statistical logic as A/B testing sample sizes — a small early cohort surfaces the highest-frequency bugs and objections cheaply, and each expansion tier multiplies exposure only after the previous tier's failure modes have been found and fixed, which is mathematically far cheaper than finding all failure modes simultaneously at full-volume GA.
+
 ## Stretch goals
 
 Build the same plan for a feature you are actually shipping in the next

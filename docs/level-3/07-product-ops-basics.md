@@ -201,6 +201,10 @@ template factory.
 | **Hiring too early** | Two PMs and a product ops manager | Under 5 PMs, the Head of Product does this; write the docs yourself |
 | **Never sunsetting** | 40 dashboards, 9 used | Audit annually; delete anything unopened in 90 days |
 
+## How It Actually Works
+
+Product Ops exists as a role because of a scaling limit: practices that work fine informally at 5 PMs (ad hoc tooling, personal spreadsheets for roadmap tracking, tribal-knowledge onboarding) break down combinatorially past a certain headcount, because the number of pairwise inconsistencies between PMs' individual processes grows roughly with the square of team size, while the value of standardization (a shared tool, a shared process for cross-team dependency tracking) grows linearly — Product Ops is the function that intervenes once that crossover point is reached. The mechanism behind Product Ops' focus on "single source of truth" tooling (one roadmap tool, one metrics dashboard) is that data fragmentation compounds silently: each disconnected tool/spreadsheet develops its own slightly-different definitions over time (what counts as an "active user," what stage counts as "shipped"), and by the time leadership notices two dashboards disagree, reconciling them requires an expensive audit — centralizing definitions early is cheaper than reconciling drift later, the same argument that motivates centralized analytics event taxonomies. Standardized rituals (consistent PRD templates, consistent roadmap review cadence) reduce the cognitive overhead of cross-team collaboration by the same mechanism RACI clarity does — every team member no longer has to relearn "how does this specific PM run things" for each new collaboration, freeing working memory for the actual problem rather than for navigating process variance.
+
 ## Exercise
 
 1. **Run the time audit.** Two weeks, six categories, every PM including

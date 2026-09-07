@@ -91,6 +91,10 @@ statement exists does the team start considering solutions (a scheduled
 digest email, a Slack integration, etc.) — solutioning is deliberately
 deferred to Module 4/5.
 
+## How It Actually Works
+
+Problem discovery works because it exploits a structural asymmetry: the cost of being wrong about a problem is roughly the cost of a conversation (an hour), while the cost of being wrong about a solution is the cost of the entire build-test-ship cycle (weeks to months). The mechanism is a funnel of falsifiability — each discovery technique is designed to kill a bad idea as cheaply as possible before it survives into the expensive stage. A problem statement without a frequency and severity estimate is unfalsifiable (you can't tell if it's worth solving), which is why the discipline of writing "who has this problem, how often, and how painful is it on a 1-5 scale" isn't bureaucracy — it's the minimum information needed to rank problems against each other with real math. The "5 Whys" technique works because most reported problems are symptoms sitting several causal layers above the actual root cause, and asking "why" repeatedly forces you to walk the causal chain until you hit something you can actually intervene on (a process failure, a missing feature, a misaligned incentive) rather than something you can't (e.g., "users are impatient"). The reason triangulating multiple discovery methods (interviews + support tickets + usage data + sales call notes) matters isn't diligence for its own sake — it's that each method has a different, known bias (interviews overweight recent/vocal users, support tickets overweight already-frustrated users, usage data underweights users who churned silently), and only convergent evidence across methods with uncorrelated biases gives you a signal you can trust.
+
 ## Exercise
 
 Pick a product with a public app store or review page (or one you use

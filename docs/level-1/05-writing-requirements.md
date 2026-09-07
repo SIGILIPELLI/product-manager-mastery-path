@@ -101,6 +101,10 @@ approach first?
 **Launch plan:** Ship behind a feature flag to 20% of accounts for one week,
 check the success metric, then roll out to 100%.
 
+## How It Actually Works
+
+Good requirements writing works by front-loading ambiguity resolution into a cheap medium (text/prototypes) instead of letting it resolve during a late, expensive medium (code review, QA, or worse, production). The underlying mechanism is that natural language requirements are lossy compressions of intent, and every reader decompresses them using their own default assumptions — this is why "the button should be prominent" generates three different implementations from three engineers: each fills the gap with a different mental model. Acceptance criteria in Given/When/Then form work specifically because they force enumeration of edge cases and system states *before* code exists, which is far cheaper than discovering an unhandled state (empty list, network failure, concurrent edit) during testing. The reason a PRD should separate "problem" from "solution" isn't stylistic — it's that coupling them removes the engineering team's ability to propose a technically superior solution to the same problem, silently converting a smart team into an order-taking team, which measurably reduces solution quality over time because engineers closest to the codebase often see cheaper paths to the same outcome that a PM, who doesn't see the codebase, cannot.
+
 ## Exercise
 
 Take the top-priority initiative from your Module 4 exercise. Write:

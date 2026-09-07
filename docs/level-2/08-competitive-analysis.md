@@ -190,6 +190,10 @@ has it." Each came from a loss count, a segment win rate, or a written
 decision not to act — including two decisions to build nothing, which is the
 part most competitive reviews are missing.
 
+## How It Actually Works
+
+Competitive analysis works by triangulating a competitor's *revealed strategy* (what they're actually building and charging, visible in the market) against their *likely constraints* (funding stage, team size, technical architecture) to predict their next move — the mechanism is that most competitive moves are highly constrained by what a company can plausibly execute given its resources, so a well-informed guess about their constraints narrows the space of plausible next moves far more than guessing based on stated intentions (which are cheap to say and unreliable). Feature-parity chasing is a common trap explainable by a specific mechanism: matching a competitor's feature list treats their public surface as a proxy for their strategy, but features are the *output* of a strategy shaped by their specific customer base and unit economics, so copying the output without the underlying strategic context often produces a feature that serves your competitor's customers' needs, not yours. Win/loss analysis works because it's the only source of *causal* competitive data (why a specific real deal was actually won or lost) as opposed to *inferred* competitive data (what you assume based on feature comparison) — the mechanism that makes it valuable is that it samples from the actual decision process of real buyers under real constraints, which is a far more reliable signal than any amount of desk research about a competitor's public positioning.
+
 ## Exercise
 
 Run a real competitive review for your product and produce:

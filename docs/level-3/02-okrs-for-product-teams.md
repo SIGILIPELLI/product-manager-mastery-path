@@ -192,6 +192,10 @@ Scores are `(actual − baseline) / (target − baseline)`, capped at 1.0.
 | Set once, read at quarter end | No week-6 review | Weekly confidence, week-6 keep/drop decision in writing |
 | Tied to compensation | Everyone lands 0.95 every quarter | Grades inform planning, never pay |
 
+## How It Actually Works
+
+OKRs work by deliberately separating the *what* (Key Results, which must be measurable and binary-verifiable) from the *how* (initiatives, left to the team), and the mechanism this protects is a well-documented failure of top-down planning: when leadership specifies both the goal and the exact tactics, the team closest to the problem loses the ability to route around obstacles discovered mid-quarter, and correction only happens at the next planning cycle instead of continuously. Setting Key Results as outcomes rather than outputs (e.g., "reduce churn by 2pp" rather than "ship the win-back campaign") matters because outputs can be completed while the underlying problem remains unsolved — you can ship the campaign and still have churn unchanged, and only an outcome-based KR would flag that as a miss, forcing the team to try something else instead of declaring victory on activity completed. The common practice of intentionally setting "aspirational" OKRs at 70% expected achievement, rather than 100%, works because of a specific incentive-distortion risk: if OKRs are tied to compensation or are always expected to hit 100%, teams rationally sandbag their targets to guarantee an easy win, which destroys the metric's usefulness as a forecasting and prioritization tool — deliberately decoupling OKR score from performance review is what allows ambitious, honest target-setting to survive contact with human incentives.
+
 ## Exercise
 
 Write a full OKR set for your team's next quarter, traced to a strategy.

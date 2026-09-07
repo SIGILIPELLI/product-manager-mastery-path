@@ -193,6 +193,62 @@ The most valuable rule is the last: **kill criteria fire automatically.**
 Something that must be argued for at the moment of failure will not be
 argued for, because by then everyone in the room is invested.
 
+## How It Actually Works: diminishing returns and the NRR compounding engine
+
+**Why marginal ROI, not average ROI, is the correct allocation variable.**
+Every line's output as a function of headcount roughly follows a
+concave production function — each additional engineer adds less than the
+last, because the highest-value work gets done first. If `f(n)` is a line's
+ARR contribution with `n` engineers, `ARR per engineer = f(n)/n` is the
+**average product**, while the allocation decision needs `f(n+1) - f(n)`,
+the **marginal product**. These diverge sharply once `f` is concave:
+Publish's average is $1.94M/engineer (mature, most of `f` already
+captured), but its marginal is $180k — the 15th engineer is nowhere near as
+valuable as the 1st. Decide's average is lower ($980k) but its marginal is
+higher ($620k), because it is earlier on its curve, with more high-value
+work still undone. Allocating by the average metric routes investment
+*away* from the steepest part of every line's curve; allocating by the
+marginal metric routes it *toward* the steepest part. This is the same
+logic as marginal utility in economics: rational allocation equalizes
+marginal returns across uses, not average returns.
+
+**Why the confidence column matters mechanically, not just rhetorically.**
+Decide's $620k marginal estimate was fit on a period where headcount rose
+6→15 *and* the agency channel grew simultaneously — two moving variables
+explaining one outcome (attach going 15.5%→34%). Without holding the
+channel effect constant, the regression of "engineers added" against
+"ARR gained" has an omitted-variable bias: some of the coefficient on
+headcount is actually capturing the channel's own growth. Reported
+confidence (High/Medium/Low) is a proxy for how many other explanatory
+variables moved during the measurement window — the more that moved
+together, the wider the true error bars around the point estimate, even
+though the arithmetic ($620k) looks precise to the dollar.
+
+**The NRR blended-rate mechanism.** Net revenue retention compounds
+multiplicatively, not additively: an account at 116% NRR is worth
+`1.16^t` times its starting ARR after `t` years with zero new sales,
+against `0.97^t` for a 97%-retaining single-product account. Over 5 years
+that is a **2.10x** multiplier on the 116% cohort versus **0.86x** on the
+97% cohort — a 2.4x gap in terminal value from the retention rate alone,
+before counting a single new sale. This is exactly why "move 10% of
+single-product accounts to two products" is analyzed as an NRR-shift
+problem rather than a one-time upsell: the $1,180,800 immediate ARR gain is
+the smaller of the two effects. The larger, uncounted effect is that those
+615 accounts now compound at a blended rate close to 116% instead of 97%
+for as long as they stay customers — the real prize is the change in the
+exponent, not the change in year-one revenue.
+
+**The kill-criterion mechanism is about removing a sunk-cost decision
+node, not about being strict.** A threshold set *before* launch is
+evaluated by a rule (`attach < 12% at month 18 → stop`); a threshold
+argued *at* the moment of failure is evaluated by the people who chose the
+bet, staffed the team, and told the board it would work — the same
+cognitive-dissonance and sunk-cost mechanisms covered in Level 2's
+prioritization bias material apply here at the portfolio level. Automating
+the trigger converts an emotionally loaded judgment call into a
+pre-committed fact-check, which is the only way kill criteria actually
+fire on schedule instead of being renegotiated indefinitely.
+
 ## Exercise
 
 1. **Build the portfolio table** for your company: ARR, growth, headcount,

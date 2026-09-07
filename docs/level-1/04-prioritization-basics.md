@@ -92,6 +92,10 @@ to Google Sheets directly" is a Should, "custom report templates" is a Could,
 and "scheduled recurring exports" is explicitly a Won't for this release
 (flagged as a strong Level 2 candidate instead).
 
+## How It Actually Works
+
+Prioritization frameworks work by converting a multi-criteria decision (which has no single "correct" answer because impact, effort, and confidence trade off against each other) into a single sortable number, and the reason this matters mathematically is that humans are bad at holding more than 2-3 variables in working memory when comparing more than a handful of items — without a formula, prioritization degrades into recency bias (whoever pitched most recently wins) and HiPPO bias (highest-paid person's opinion wins), both of which are well-documented failure modes in decision science. A simple impact/effort score works because it's really approximating expected value: impact × probability of success ÷ cost, and even a crude 1-5 scale captures most of the variance because the biggest prioritization errors are usually 10x-order-of-magnitude errors (confusing a 1-week fix with a 1-quarter rebuild), not fine-grained ranking errors. The reason effort estimates from engineers are more trustworthy than PM guesses isn't deference to authority — it's that effort estimation is a domain-specific skill correlated with having built similar things before, while impact estimation is a market-knowledge skill PMs are closer to, so a good framework routes each estimate to whoever holds the relevant information, then combines them mechanically rather than through negotiation, which removes social pressure from the math.
+
 ## Exercise
 
 Take the three problem statements you validated (or drafted) in Module 3's

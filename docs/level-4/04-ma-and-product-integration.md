@@ -174,6 +174,55 @@ than any integration plan.
 | **Culture mismatch** | Two operating systems, unresolved | Pick one operating cadence in month one, and say which |
 | **Data rights** | The dataset you bought cannot legally be combined | Diligence question, not a post-close discovery |
 
+## How It Actually Works: expected value under uncertainty, and why attribution is the load-bearing variable
+
+**Expected value is a probability-weighted sum, and it is only as honest as
+its inputs.** The mechanical formula behind the board table is:
+
+```
+EV = Σ p_i × net_value_i,  where net_value_i = (ΔARR_i × multiple) − price − integration_cost
+```
+
+The naive model effectively set the attribution term to a hidden 100% (all
+of Decide's projected lift assigned to the acquisition) and used a single
+point estimate instead of a distribution — which is mathematically
+equivalent to running the weighted-sum formula with one scenario at
+`p = 1`. Collapsing a distribution to its most optimistic point is the
+single most common error in deal math, because the sum of several
+plausible-sounding assumptions (higher growth rate, full attribution, no
+integration friction) compounds multiplicatively into a headline number
+far outside any single scenario's plausible range — $132.7M from stacking
+three optimistic assumptions, versus $48.8M once each is separately
+probability-weighted and a failure case is included.
+
+**Why attribution has to be a variable, not a constant.** Decide was
+already compounding at 71% before the acquisition; some of next year's
+growth would happen with or without Pricewell. Treating 100% of the
+acceleration as caused by the deal is the acquisition-math version of
+correlation-causation confusion — it's the same fallacy flagged in the
+portfolio module's NRR-attach analysis (accounts that buy more may just be
+better accounts) applied to a growth curve instead of a customer segment.
+Making attribution an explicit percentage per scenario (0%, 15%, 40%, 70%)
+forces the question "how much of this improvement would have happened
+anyway" to be answered before the number is presented, rather than
+smuggled in as an assumption nobody defends aloud.
+
+**Why a 15%-probability loss is still the right bet: EV vs. variance.**
+The failure scenario loses $13.9M; the weighted EV is still +$48.8M
+positive, because the deal is being evaluated on a **risk-neutral expected
+value**, not on "can we tolerate the worst case regardless of odds." This
+is the standard decision-theory move of maximizing `Σ p_i × outcome_i`
+rather than optimizing for the worst-case outcome (minimax) — it is only
+valid if (a) the failure case's $13.9M loss doesn't threaten insolvency or
+covenant breach (a large enough downside can dominate an EV calculation via
+risk-aversion, which is why the model separately checks the deal doesn't
+bet the company) and (b) the probabilities are genuinely independent
+estimates, not a single analyst's confidence dressed up as a distribution
+— which is exactly why diligence findings (customer concentration,
+single-tenant architecture, engineers already interviewing) are used to
+*revise* the scenario probabilities and integration-cost line, not just to
+adjust the price.
+
 ## Exercise
 
 1. **Write the build/buy/partner comparison** for a capability gap your

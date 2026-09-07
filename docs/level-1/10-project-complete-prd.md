@@ -91,6 +91,10 @@ the same bar a real design/engineering review would hold it to:
       statement and understand why this matters, without asking you to
       explain it out loud?
 
+## How It Actually Works
+
+A complete PRD earns its cost by acting as a shared, falsifiable artifact that converts implicit assumptions into explicit, arguable claims before money is spent building them. The mechanism is that any unstated assumption is, by definition, untested — and untested assumptions surface as expensive surprises at the worst possible time (mid-build or post-launch) rather than the cheapest possible time (a five-minute read-through). Sectioning a PRD into problem, goals/non-goals, requirements, and success metrics works because it maps directly onto the four places a project can silently fail: solving the wrong problem, solving an unbounded problem (scope creep from missing non-goals), building the wrong thing (ambiguous requirements), or being unable to tell afterward whether it worked (no success metric defined upfront, which lets everyone retroactively declare victory regardless of the actual outcome — a well-known bias called outcome reframing). Non-goals specifically function as a pre-negotiated scope fence: without them, every stakeholder's pet feature is implicitly "maybe in scope," and every one of those ambiguities becomes a negotiation that happens live, under deadline pressure, instead of calmly on paper weeks earlier.
+
 ## Exercise
 
 Assemble the complete PRD from Steps 1-6 above into a single document (use
