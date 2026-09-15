@@ -1,3 +1,7 @@
+---
+description: "Growth Product Management — Growth product management is not marketing with a Jira board, and it is not 'the team that does the signup page'. It is the…"
+---
+
 # 04 · Growth Product Management
 
 Growth product management is not marketing with a Jira board, and it is not

@@ -1,3 +1,7 @@
+---
+description: "B2B vs B2C PM Differences — PMs move between B2B and B2C more often than they expect, and the failures are predictable. The B2C PM arriving in B2B runs a…"
+---
+
 # 05 · B2B vs B2C PM Differences
 
 PMs move between B2B and B2C more often than they expect, and the failures

@@ -1,3 +1,7 @@
+---
+description: "Go-to-Market Basics — A feature that ships and is never adopted cost the same to build as one that worked. Go-to-market is the set of decisions that turn…"
+---
+
 # 05 · Go-to-Market Basics
 
 A feature that ships and is never adopted cost the same to build as one that

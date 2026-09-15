@@ -1,3 +1,7 @@
+---
+description: "Capstone — Full Product Strategy + Org Design — This is the deliverable the whole path has been building toward: a three-year product strategy for ListUp…"
+---
+
 # 10 · Capstone — Full Product Strategy + Org Design
 
 This is the deliverable the whole path has been building toward: a

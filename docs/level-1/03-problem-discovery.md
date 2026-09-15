@@ -1,3 +1,7 @@
+---
+description: "Problem Discovery — Discovery is the work of figuring out whether a problem is real, big enough to matter, and worth solving before any design or…"
+---
+
 # 03 · Problem Discovery
 
 Discovery is the work of figuring out whether a problem is real, big enough

@@ -1,3 +1,7 @@
+---
+description: "Product-Led Growth at Scale — Product-led growth is easy to describe and hard to sustain. A product sells itself, users onboard without a human, and the…"
+---
+
 # 03 · Product-Led Growth at Scale
 
 Product-led growth is easy to describe and hard to sustain. A product sells

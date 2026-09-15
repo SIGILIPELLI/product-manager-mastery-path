@@ -1,3 +1,7 @@
+---
+description: "Product Strategy & Vision — Every roadmap argument you have ever lost was really a strategy argument. When two credible people disagree about whether to…"
+---
+
 # 01 · Product Strategy & Vision
 
 Every roadmap argument you have ever lost was really a strategy argument.

@@ -1,3 +1,7 @@
+---
+description: "Prioritization Frameworks Deep Dive — In Level 1 you learned RICE and MoSCoW, which are enough to sort a backlog of comparable items. They start failing…"
+---
+
 # 02 · Prioritization Frameworks Deep Dive
 
 In Level 1 you learned RICE and MoSCoW, which are enough to sort a backlog

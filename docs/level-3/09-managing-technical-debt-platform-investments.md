@@ -1,3 +1,7 @@
+---
+description: "Managing Technical Debt & Platform Investments — Technical debt is the one roadmap item that has no customer, no revenue attached, no launch, and no demo…"
+---
+
 # 09 · Managing Technical Debt & Platform Investments
 
 Technical debt is the one roadmap item that has no customer, no revenue

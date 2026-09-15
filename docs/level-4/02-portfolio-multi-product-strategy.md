@@ -1,3 +1,7 @@
+---
+description: "Portfolio & Multi-Product Strategy — With one product you prioritise. With three you allocate — and the two are different disciplines. Prioritisation asks…"
+---
+
 # 02 · Portfolio & Multi-Product Strategy
 
 With one product you prioritise. With three you **allocate** — and the two

@@ -1,3 +1,7 @@
+---
+description: "What Is Product Management? — At its core, product management is the discipline of deciding what gets built and why, so that engineering can focus on how.…"
+---
+
 # 01 · What Is Product Management?
 
 Product management is often described in a one-liner — "the intersection of

@@ -1,3 +1,7 @@
+---
+description: "Project — Product Strategy Doc + OKRs — This project is the artefact a senior PM is hired to produce: an annual product strategy with the operating plan…"
+---
+
 # 10 · Project — Product Strategy Doc + OKRs
 
 This project is the artefact a senior PM is hired to produce: an annual

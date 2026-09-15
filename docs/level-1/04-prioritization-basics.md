@@ -1,3 +1,7 @@
+---
+description: "Prioritization Basics — Once you have several validated problems (Module 3), you'll never have enough engineering time to solve all of them at once.…"
+---
+
 # 04 · Prioritization Basics
 
 Once you have several validated problems (Module 3), you'll never have

@@ -1,3 +1,7 @@
+---
+description: "Product Analytics — Level 1 metrics answer 'how are we doing.' Product analytics answers 'where exactly is the product losing people, and what would…"
+---
+
 # 04 · Product Analytics
 
 Level 1 metrics answer "how are we doing." Product analytics answers "where

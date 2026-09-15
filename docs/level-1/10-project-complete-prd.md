@@ -1,3 +1,7 @@
+---
+description: "Project — Write a Complete PRD — This project combines every module in Level 1 into one real deliverable: a complete PRD for a sample feature, built the…"
+---
+
 # 10 · Project — Write a Complete PRD
 
 This project combines every module in Level 1 into one real deliverable: a

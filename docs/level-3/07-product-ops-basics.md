@@ -1,3 +1,7 @@
+---
+description: "Product Ops Basics — Somewhere between three product managers and fifteen, a company stops being limited by how good its PMs are and starts being limited…"
+---
+
 # 07 · Product Ops Basics
 
 Somewhere between three product managers and fifteen, a company stops being

@@ -1,3 +1,7 @@
+---
+description: "Career Growth: IC to Director/VP — Product careers are unusually badly signposted. Engineers have a visible ladder with an obvious IC track; sales has a…"
+---
+
 # 09 · Career Growth: IC to Director/VP
 
 Product careers are unusually badly signposted. Engineers have a visible

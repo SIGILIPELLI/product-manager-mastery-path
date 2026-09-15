@@ -1,3 +1,7 @@
+---
+description: "Agile/Scrum for PMs — Scrum is a delivery framework, not a product framework. It tells a team how to organise two weeks of work; it says almost nothing…"
+---
+
 # 07 · Agile/Scrum for PMs
 
 Scrum is a delivery framework, not a product framework. It tells a team how

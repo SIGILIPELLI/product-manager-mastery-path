@@ -1,3 +1,7 @@
+---
+description: "Advanced Experimentation — The mark of an advanced practitioner is not knowing more tests. It is knowing when the standard test is lying to you, and…"
+---
+
 # 08 · Advanced Experimentation
 
 Level 2 covered the two-arm A/B test: hypothesis, primary metric, sample

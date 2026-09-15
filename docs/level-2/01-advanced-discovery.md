@@ -1,3 +1,7 @@
+---
+description: "Advanced Discovery — Level 1 discovery gets you one validated problem at a time, usually in a burst right before a planning cycle. That works until the…"
+---
+
 # 01 · Advanced Discovery
 
 Level 1 discovery gets you one validated problem at a time, usually in a

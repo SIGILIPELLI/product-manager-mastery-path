@@ -1,3 +1,7 @@
+---
+description: "OKRs for Product Teams — Most product teams have OKRs. Very few have OKRs that change what anybody does. The tell is simple: if your quarter would have…"
+---
+
 # 02 · OKRs for Product Teams
 
 Most product teams have OKRs. Very few have OKRs that change what anybody

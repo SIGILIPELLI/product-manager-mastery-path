@@ -1,3 +1,7 @@
+---
+description: "Building Product Culture — Culture is the least tractable-sounding word in management and one of the most concrete things a product leader actually…"
+---
+
 # 06 · Building Product Culture
 
 Culture is the least tractable-sounding word in management and one of the

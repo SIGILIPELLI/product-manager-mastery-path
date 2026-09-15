@@ -1,3 +1,7 @@
+---
+description: "Metrics & KPIs Basics — A PRD's 'success metrics' section (Module 5) only works if you know how to choose good metrics in the first place. This module…"
+---
+
 # 07 · Metrics & KPIs Basics
 
 A PRD's "success metrics" section (Module 5) only works if you know how to

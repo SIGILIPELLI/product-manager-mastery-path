@@ -1,3 +1,7 @@
+---
+description: "AI/ML Product Management — Most of product management transfers to AI products unchanged. Discovery is still discovery, prioritisation is still…"
+---
+
 # 07 · AI/ML Product Management
 
 Most of product management transfers to AI products unchanged. Discovery is

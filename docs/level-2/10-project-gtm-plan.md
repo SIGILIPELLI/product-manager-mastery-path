@@ -1,3 +1,7 @@
+---
+description: "Project — GTM Plan for a Feature Launch — This project pulls Level 2 together into the artefact a PM is most often judged on and least often taught to…"
+---
+
 # 10 · Project — GTM Plan for a Feature Launch
 
 This project pulls Level 2 together into the artefact a PM is most often

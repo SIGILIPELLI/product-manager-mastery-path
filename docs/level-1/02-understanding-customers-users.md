@@ -1,3 +1,7 @@
+---
+description: "Understanding Customers & Users — Everything a PM prioritizes, writes, and ships is downstream of one thing: how well they actually understand the people…"
+---
+
 # 02 · Understanding Customers & Users
 
 Everything a PM prioritizes, writes, and ships is downstream of one thing:

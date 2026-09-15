@@ -1,3 +1,7 @@
+---
+description: "Executive Communication & Board Reporting — There is a specific, recognisable moment when a good product leader loses a room. They open with context. They…"
+---
+
 # 05 · Executive Communication & Board Reporting
 
 There is a specific, recognisable moment when a good product leader loses a

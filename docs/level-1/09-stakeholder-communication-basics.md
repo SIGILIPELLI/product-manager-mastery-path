@@ -1,3 +1,7 @@
+---
+description: "Stakeholder Communication Basics — Even a perfectly prioritized, well-scoped, well-metriced initiative can stall if the people around it — leadership…"
+---
+
 # 09 · Stakeholder Communication Basics
 
 Even a perfectly prioritized, well-scoped, well-metriced initiative can stall

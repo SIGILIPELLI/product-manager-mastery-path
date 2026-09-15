@@ -1,3 +1,7 @@
+---
+description: "Writing Requirements — Once an initiative is prioritized, someone has to turn it into something engineering and design can actually build from. This…"
+---
+
 # 05 · Writing Requirements
 
 Once an initiative is prioritized, someone has to turn it into something

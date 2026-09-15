@@ -1,3 +1,7 @@
+---
+description: "Crisis Management for Products — Every product leader eventually has a day where the product does something expensive to customers. A pricing bug charges…"
+---
+
 # 08 · Crisis Management for Products
 
 Every product leader eventually has a day where the product does something

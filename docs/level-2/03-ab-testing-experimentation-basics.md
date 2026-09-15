@@ -1,3 +1,7 @@
+---
+description: "A/B Testing & Experimentation Basics — Most product decisions are made from a mix of judgement and after-the-fact dashboards, which means you rarely learn…"
+---
+
 # 03 · A/B Testing & Experimentation Basics
 
 Most product decisions are made from a mix of judgement and after-the-fact

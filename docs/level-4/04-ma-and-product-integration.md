@@ -1,3 +1,7 @@
+---
+description: "M&A and Product Integration — At some point a corp dev deck lands in your inbox with two days' notice and a request for 'the product view'. This is one of…"
+---
+
 # 04 · M&A and Product Integration
 
 At some point a corp dev deck lands in your inbox with two days' notice and

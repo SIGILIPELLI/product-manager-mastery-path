@@ -1,3 +1,7 @@
+---
+description: "Competitive Analysis — Most competitive analysis produces a feature grid nobody reads. The reason is that it answers the wrong question. 'What do they…"
+---
+
 # 08 · Competitive Analysis
 
 Most competitive analysis produces a feature grid nobody reads. The reason

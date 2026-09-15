@@ -1,3 +1,7 @@
+---
+description: "Leading Product Orgs — The hardest transition in a product career is not IC to manager. It is the moment you stop being paid for the decisions you make…"
+---
+
 # 01 · Leading Product Orgs
 
 The hardest transition in a product career is not IC to manager. It is the

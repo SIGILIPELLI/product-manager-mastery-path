@@ -1,3 +1,7 @@
+---
+description: "Roadmapping Basics — A roadmap communicates direction and sequencing to a broader audience than a single PRD does — it's how a PM shows leadership, sales…"
+---
+
 # 08 · Roadmapping Basics
 
 A roadmap communicates direction and sequencing to a broader audience than a

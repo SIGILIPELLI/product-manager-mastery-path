@@ -1,3 +1,7 @@
+---
+description: "Working with Sales & Customer Success — Sales and customer success are simultaneously your best discovery channel and the biggest single source of roadmap…"
+---
+
 # 06 · Working with Sales & Customer Success
 
 Sales and customer success are simultaneously your best discovery channel

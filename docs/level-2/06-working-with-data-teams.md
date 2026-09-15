@@ -1,3 +1,7 @@
+---
+description: "Working with Data Teams — Analysts and data scientists are the most over-subscribed people in most product orgs, and PMs are usually the reason. The…"
+---
+
 # 06 · Working with Data Teams
 
 Analysts and data scientists are the most over-subscribed people in most

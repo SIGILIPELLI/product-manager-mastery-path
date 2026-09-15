@@ -1,3 +1,7 @@
+---
+description: "Platform & Ecosystem Thinking — 'Let's make it a platform' is the most expensive sentence in product management. It sounds like leverage — build once…"
+---
+
 # 03 · Platform & Ecosystem Thinking
 
 "Let's make it a platform" is the most expensive sentence in product

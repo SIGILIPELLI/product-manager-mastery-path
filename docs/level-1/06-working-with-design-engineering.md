@@ -1,3 +1,7 @@
+---
+description: "Working with Design & Engineering — A PRD is only useful if it leads to a good collaborative build process. This module covers the fundamentals of working…"
+---
+
 # 06 · Working with Design & Engineering
 
 A PRD is only useful if it leads to a good collaborative build process. This
