@@ -253,6 +253,10 @@ the trigger converts an emotionally loaded judgment call into a
 pre-committed fact-check, which is the only way kill criteria actually
 fire on schedule instead of being renegotiated indefinitely.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Lead — Product Strategy Cascading](https://sigilipelli.github.io/product-lead-mastery-path/level-2/05-strategy-cascading/)
+
 ## Exercise
 
 1. **Build the portfolio table** for your company: ARR, growth, headcount,

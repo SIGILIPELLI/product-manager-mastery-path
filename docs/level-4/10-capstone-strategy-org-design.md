@@ -385,3 +385,9 @@ multi-quarter strategic bet instead of a multi-hour production incident.
    Module 5's structure — bottom line, evidence, risk, ask — and have someone
    play the board member whose only question is why growth decelerates from
    38% to 27% while headcount rises 53%.
+
+## 🔀 Related lessons on other tracks
+
+- [AI Manager — 10 · Capstone — Full AI Strategy, Governance & Org Design](https://sigilipelli.github.io/ai-manager-mastery-path/level-4/10-capstone-ai-strategy-governance-org-design/)
+- [Product Lead — 08 · Basic Org Design for Product Teams](https://sigilipelli.github.io/product-lead-mastery-path/level-1/08-basic-org-design/)
+- [NodeMCU/IoT — Capstone — Production IoT Product Design](https://sigilipelli.github.io/nodemcu-mastery-path/level-4/10-capstone-production-iot-product/)

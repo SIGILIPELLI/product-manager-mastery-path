@@ -265,6 +265,10 @@ That is the concrete mechanism behind "publish the new decision rights, not
 just the boxes": the boxes describe the graph's partition, the decision
 rights describe which edges carry a veto and which just carry information.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Lead — M&A Integration for Product Orgs](https://sigilipelli.github.io/product-lead-mastery-path/level-3/07-ma-integration/)
+
 ## Exercise
 
 1. **Count your decisions.** For two weeks, log every decision that required

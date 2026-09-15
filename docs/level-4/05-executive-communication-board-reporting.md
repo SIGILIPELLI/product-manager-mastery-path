@@ -257,6 +257,12 @@ to updating in public regardless of which way the result breaks, which is
 the only thing that distinguishes calibrated judgment from a series of
 lucky or unlucky guesses viewed after the fact.
 
+## 🔀 Related lessons on other tracks
+
+- [English Fluency & IELTS — 01 · Executive-Level Communication in English](https://sigilipelli.github.io/english-fluency-mastery-path/level-4/01-executive-level-communication/)
+- [Product Lead — Advanced Executive Communication](https://sigilipelli.github.io/product-lead-mastery-path/level-3/05-executive-communication/)
+- [AI Manager — 06 · Board-Level AI Reporting](https://sigilipelli.github.io/ai-manager-mastery-path/level-4/06-board-level-ai-reporting/)
+
 ## Exercise
 
 1. **Rewrite your last executive update as a four-part spine**: bottom line,

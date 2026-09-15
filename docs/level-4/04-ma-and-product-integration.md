@@ -227,6 +227,10 @@ single-tenant architecture, engineers already interviewing) are used to
 *revise* the scenario probabilities and integration-cost line, not just to
 adjust the price.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Lead — M&A Integration for Product Orgs](https://sigilipelli.github.io/product-lead-mastery-path/level-3/07-ma-integration/)
+
 ## Exercise
 
 1. **Write the build/buy/partner comparison** for a capability gap your

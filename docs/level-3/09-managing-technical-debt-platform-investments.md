@@ -198,6 +198,10 @@ better — which almost never happens any other way.
 
 Technical debt functions economically exactly like financial debt: it lets a team "borrow" development speed now in exchange for a recurring "interest payment" of slower future development (more bugs, harder onboarding, more time spent working around the shortcut) — the reason it's rational to take on debt deliberately (not just an engineering failure) is that, like financial debt, it can be net positive if the borrowed speed lets you capture a time-sensitive opportunity worth more than the accumulated interest, but it becomes destructive when the "interest" compounds faster than the team pays it down, which happens when a shortcut becomes a dependency for other shortcuts. The mechanism behind why platform investments are chronically under-prioritized against feature work is a visibility asymmetry: a new feature has an obvious, attributable owner and a visible launch, while platform work's benefit (faster future delivery, fewer incidents) is diffuse and only visible in *aggregate* velocity trends months later — this is a classic principal-agent/attribution problem, which is why platform investment requires either protected capacity (a fixed percentage of every sprint, regardless of feature pressure) or an explicit executive sponsor, since it will otherwise always lose a head-to-head prioritization fight against a feature with a clear, immediate, attributable payoff. Quantifying technical debt "interest" (e.g., tracking incident rate, deploy frequency, or engineer-reported friction surveys over time) matters because without a number, debt discussions default to anecdote, and anecdote systematically loses against a feature request that has a customer's name attached to it.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 09 · Technical Debt in an Agile Delivery Model](https://sigilipelli.github.io/agile-mastery-path/level-3/09-technical-debt-agile/)
+
 ## Exercise
 
 1. **Classify your debt.** List your team's ten largest known items into the

@@ -257,3 +257,7 @@ quarter. Match the structure above section for section, then push further:
    your risk register.
 
 Completing this project means you're ready for **Level 3 · Advanced**.
+
+## 🔀 Related lessons on other tracks
+
+- [Automotive Testing — 10 · Project — HIL Test Plan for an ECU Feature](https://sigilipelli.github.io/automotive-testing-mastery-path/level-3/10-project-hil-test-plan/)

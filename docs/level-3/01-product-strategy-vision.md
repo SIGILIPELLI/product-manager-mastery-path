@@ -227,6 +227,10 @@ neither property.
 
 Good product strategy works the same way good military strategy does — by concentrating limited resources at a specific point where you can win, rather than spreading them evenly, because most competitive advantage comes from relative strength at a chosen point, not absolute strength everywhere. A strategy statement (diagnosis → guiding policy → coherent actions, per Rumelt) works mechanically because it forces the guiding policy to *follow from* the diagnosis rather than be chosen independently — a common failure mode is picking a generic "guiding policy" (e.g., "focus on enterprise") that isn't actually implied by the specific diagnosis of why you're losing today, which produces a strategy document that reads well but doesn't logically constrain any decision. Vision statements function as a coordination device that solves a distributed-decision problem: when hundreds of small day-to-day decisions get made independently across a large org, a shared, specific vision acts like a compressed decision rule each person can apply locally without needing to escalate — the more specific and falsifiable the vision, the more decisions it can resolve without a meeting, which is why vague, uncontroversial vision statements ("delight our customers") provide almost zero coordination value despite feeling safe to write.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Lead — 03 · Setting Product Vision for a Team](https://sigilipelli.github.io/product-lead-mastery-path/level-1/03-setting-product-vision/)
+
 ## Exercise
 
 Write a three-year strategy for a product you work on. Not a summary — the

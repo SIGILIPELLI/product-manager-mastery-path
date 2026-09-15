@@ -251,6 +251,12 @@ unfalsifiable and can recur indefinitely: it names no specific missing
 skill and sets no evaluation date, so there is no evidence threshold that
 would ever resolve it either way.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://sigilipelli.github.io/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
+- [Project Manager — 09 · Career Growth: PM to Program/Portfolio Director](https://sigilipelli.github.io/project-manager-mastery-path/level-4/09-career-growth-pm-to-director/)
+- [AI Manager — 09 · Career Growth: AI Manager to Chief AI Officer](https://sigilipelli.github.io/ai-manager-mastery-path/level-4/09-career-growth-ai-manager-to-caio/)
+
 ## Exercise
 
 1. **Name your current transition** and write the one behaviour you are

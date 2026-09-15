@@ -250,6 +250,10 @@ number of *attendees × authors*, which is why the saving (3,730 of 4,400
 hours, 85%) tracks almost exactly with the ratio of meeting attendees to
 document authors in the original setup.
 
+## 🔀 Related lessons on other tracks
+
+- [Product Lead — Product Culture & Rituals at Scale](https://sigilipelli.github.io/product-lead-mastery-path/level-3/06-product-culture-at-scale/)
+
 ## Exercise
 
 1. **Write down five norms you believe your org holds**, and name the

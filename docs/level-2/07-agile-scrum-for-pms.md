@@ -182,6 +182,10 @@ for one day of rework.
 
 Scrum's specific mechanics (fixed-length sprints, a backlog, and a review/retro cadence) exist to solve the "cone of uncertainty" problem in software estimation: uncertainty about a task's true size shrinks the closer you are to executing it, so committing only to a 1-2 week horizon (rather than a full roadmap of estimates) keeps commitments inside the zone where estimates are actually reliable, while still allowing longer-range planning to happen at a coarser, appropriately-uncertain grain (epics, themes). Velocity as a planning tool works because it's an empirical, team-specific calibration constant — it doesn't measure "how good the team is," it measures the team's own historical ratio between story-point estimates and elapsed time, which cancels out systematic biases in that team's particular estimation habits (if a team always overestimates by 20%, velocity self-corrects for it without anyone needing to change their estimating behavior). The reason a sprint backlog should be frozen mid-sprint isn't rigidity for its own sake — context-switching has a measurable cognitive cost (task-switching penalties from psychology research show 20-40% productivity loss per interruption-recovery cycle), so protecting a short, bounded window from scope changes is a deliberate tradeoff: slightly less week-to-week responsiveness in exchange for meaningfully higher throughput within the sprint.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://sigilipelli.github.io/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
+
 ## Exercise
 
 Using your current team and backlog:
