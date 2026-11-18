@@ -200,7 +200,7 @@ Technical debt functions economically exactly like financial debt: it lets a tea
 
 ## 🔀 Related lessons on other tracks
 
-- [Agile — 09 · Technical Debt in an Agile Delivery Model](https://sigilipelli.github.io/agile-mastery-path/level-3/09-technical-debt-agile/)
+- [Agile — 09 · Technical Debt in an Agile Delivery Model](https://learnmasterypath.com/agile-mastery-path/level-3/09-technical-debt-agile/)
 
 ## Exercise
 

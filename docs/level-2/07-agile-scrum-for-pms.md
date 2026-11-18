@@ -184,7 +184,7 @@ Scrum's specific mechanics (fixed-length sprints, a backlog, and a review/retro 
 
 ## 🔀 Related lessons on other tracks
 
-- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://sigilipelli.github.io/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
+- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://learnmasterypath.com/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
 
 ## Exercise
 

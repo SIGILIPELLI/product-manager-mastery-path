@@ -173,9 +173,9 @@ The PM/data-team relationship is structured around a specific division of statis
 
 ## 🔀 Related lessons on other tracks
 
-- [Data Engineering — 08 · Working with Cloud Data Warehouses](https://sigilipelli.github.io/data-engineering-mastery-path/level-3/08-cloud-data-warehouses/)
-- [Data Science — 04 · Working with Big Data](https://sigilipelli.github.io/data-science-mastery-path/level-3/04-working-with-big-data/)
-- [Tableau — 07 · Working with Multiple Data Sources](https://sigilipelli.github.io/tableau-mastery-path/level-2/07-multiple-data-sources/)
+- [Data Engineering — 08 · Working with Cloud Data Warehouses](https://learnmasterypath.com/data-engineering-mastery-path/level-3/08-cloud-data-warehouses/)
+- [Data Science — 04 · Working with Big Data](https://learnmasterypath.com/data-science-mastery-path/level-3/04-working-with-big-data/)
+- [Tableau — 07 · Working with Multiple Data Sources](https://learnmasterypath.com/tableau-mastery-path/level-2/07-multiple-data-sources/)
 
 ## Exercise
 

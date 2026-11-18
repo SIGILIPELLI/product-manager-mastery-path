@@ -4,7 +4,7 @@ A free, structured, module-wise product management training program — entry
 level to master level, with real frameworks and templates in every module and
 a hands-on deliverable at the end of each level.
 
-**Live site:** https://sigilipelli.github.io/product-manager-mastery-path/
+**Live site:** https://learnmasterypath.com/product-manager-mastery-path/
 
 ## Contents
 
@@ -23,6 +23,6 @@ python3 -m venv .venv
 
 ## Related
 
-- [Adobe Creative Cloud Mastery Path](https://sigilipelli.github.io/adobe-mastery-path/)
-- [Java Mastery Path](https://sigilipelli.github.io/java-mastery-path/)
-- [Python Mastery Path](https://sigilipelli.github.io/python-mastery-path/)
+- [Adobe Creative Cloud Mastery Path](https://learnmasterypath.com/adobe-mastery-path/)
+- [Java Mastery Path](https://learnmasterypath.com/java-mastery-path/)
+- [Python Mastery Path](https://learnmasterypath.com/python-mastery-path/)

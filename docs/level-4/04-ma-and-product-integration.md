@@ -229,7 +229,7 @@ adjust the price.
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Lead — M&A Integration for Product Orgs](https://sigilipelli.github.io/product-lead-mastery-path/level-3/07-ma-integration/)
+- [Product Lead — M&A Integration for Product Orgs](https://learnmasterypath.com/product-lead-mastery-path/level-3/07-ma-integration/)
 
 ## Exercise
 

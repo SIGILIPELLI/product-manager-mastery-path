@@ -229,7 +229,7 @@ Good product strategy works the same way good military strategy does — by conc
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Lead — 03 · Setting Product Vision for a Team](https://sigilipelli.github.io/product-lead-mastery-path/level-1/03-setting-product-vision/)
+- [Product Lead — 03 · Setting Product Vision for a Team](https://learnmasterypath.com/product-lead-mastery-path/level-1/03-setting-product-vision/)
 
 ## Exercise
 

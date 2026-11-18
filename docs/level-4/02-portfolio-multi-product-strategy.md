@@ -255,7 +255,7 @@ fire on schedule instead of being renegotiated indefinitely.
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Lead — Product Strategy Cascading](https://sigilipelli.github.io/product-lead-mastery-path/level-2/05-strategy-cascading/)
+- [Product Lead — Product Strategy Cascading](https://learnmasterypath.com/product-lead-mastery-path/level-2/05-strategy-cascading/)
 
 ## Exercise
 

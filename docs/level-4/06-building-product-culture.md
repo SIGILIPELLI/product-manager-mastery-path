@@ -252,7 +252,7 @@ document authors in the original setup.
 
 ## 🔀 Related lessons on other tracks
 
-- [Product Lead — Product Culture & Rituals at Scale](https://sigilipelli.github.io/product-lead-mastery-path/level-3/06-product-culture-at-scale/)
+- [Product Lead — Product Culture & Rituals at Scale](https://learnmasterypath.com/product-lead-mastery-path/level-3/06-product-culture-at-scale/)
 
 ## Exercise
 
