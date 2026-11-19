@@ -65,7 +65,7 @@ or plain text all work fine) to write the exercises and projects in. Every
 framework in this course is presented as a table or template you can copy
 directly into your own notes.
 
-🎥 **Prefer video?** Watch the [Mastery Path video series](https://youtube.com/@learnmasterypath) on YouTube — Shorts and full walkthroughs of these lessons.
+🎥 **Prefer video?** Watch the [Mastery Path video series](https://youtube.com/@learnmasterypath) on YouTube — Shorts and full walkthroughs of these lessons. [▶ Subscribe free](https://www.youtube.com/@learnmasterypath?sub_confirmation=1)
 
 ## More from the Mastery Path series
 
