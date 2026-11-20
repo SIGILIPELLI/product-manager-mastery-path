@@ -1,3 +1,7 @@
+---
+description: "Level 1 (Entry) of the free Product Manager Mastery Path. Understand what product managers actually do, get comfortable with the core discovery and…"
+---
+
 # Level 1 · Entry <span class="level-badge">Foundations</span>
 
 Goal: understand what product managers actually do, get comfortable with the

@@ -1,3 +1,7 @@
+---
+description: "Level 2 (Intermediate) of the free Product Manager Mastery Path: Advanced Discovery, Prioritization Frameworks Deep Dive, A/B Testing & Experimentation…"
+---
+
 # Level 2 · Intermediate
 
 ## Modules

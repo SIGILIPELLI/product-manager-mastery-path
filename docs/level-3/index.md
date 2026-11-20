@@ -1,3 +1,7 @@
+---
+description: "Level 3 (Advanced) of the free Product Manager Mastery Path: Product Strategy & Vision, OKRs for Product Teams, Platform & Ecosystem Thinking, Growth…"
+---
+
 # Level 3 · Advanced
 
 ## Modules

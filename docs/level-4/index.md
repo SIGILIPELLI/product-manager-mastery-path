@@ -1,3 +1,7 @@
+---
+description: "Level 4 (Master) of the free Product Manager Mastery Path: Leading Product Orgs, Portfolio & Multi-Product Strategy, Product-Led Growth at Scale, M&A and…"
+---
+
 # Level 4 · Master
 
 ## Modules
