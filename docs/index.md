@@ -31,8 +31,7 @@ through the same frameworks working PMs use every day.
   reuse directly) plus a worked, real-world example.
 - Each topic ends with a practical **Exercise** — a deliverable you actually
   write, not a quiz.
-- Each level ends with a project that combines everything learned in that
-  level into a single real artifact (a PRD, a GTM plan, a strategy doc).
+- Levels 1–3 each end with a project that combines everything learned in that level into a single real artifact (a PRD, a GTM plan, a strategy doc), and Level 4 ends with the course capstone.
 - Use the search bar (top of the page) to jump straight to a topic.
 
 Start here → [Level 1 · Entry](level-1/index.md)
